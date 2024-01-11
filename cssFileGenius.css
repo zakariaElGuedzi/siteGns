@@ -5,13 +5,15 @@
     --font-family: Arial, sans-serif;
 }
 * {
-    font-family: 'Poppins', sans-serif;}
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid red;
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     position: relative;
-    height: 100vh;
+    height: auto;
     box-sizing: border-box;
 }
 header {
@@ -24,30 +26,31 @@ img {
     height: 50px;
     margin-right: 10px;
 }
-
+nav {
+    display: flex;
+    gap: 50px;
+}
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 15px 40px;
-    margin: 0 10px;
+    padding: 0 0px;
+    margin: 0 40px;
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
-    transition: ease-in-out 0.3s;
+    transition: ease 0.3s;
+    position: relative;
 }
 
 nav a:hover {
     transform: scale(1.1);
-    border-left: 3px solid rgb(254, 252, 252);
     color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
+
 .divPortDrkHeader {
     width: 60px;
     display: flex;
     justify-content: space-between;
-    padding-right: 45px;
-}
-.divPortDrkHeader i {
-    padding-left: 30px;
 }
 .fa-regular {
     cursor: pointer;
@@ -69,8 +72,8 @@ nav a:hover {
     display: none;
     padding: 20px;
     z-index: 99;
+    height: calc(100% - 40px);
     animation: menuanimopen ease 1s;
-    height: calc(100% + 100px);
 }
 @keyframes menuanimopen {
     0%{
@@ -111,7 +114,7 @@ nav a:hover {
     letter-spacing: 1px;
     word-spacing: 2px;
     line-height: 2rem;
-    max-width: fit-content;
+    width: fit-content;
 }
 .imgGrid {
     display: flex;
@@ -155,7 +158,7 @@ nav a:hover {
 
 footer {
     width: 100%;
-    height: 25rem;
+    /* height: 25rem; */
     background: #8d8989;
     display: flex;
     align-items: center;
@@ -166,19 +169,11 @@ footer h1 {
     font-size: 22px;
     border-bottom: 5px solid rgb(25, 38, 100);
     width: 10rem;
-
 }
 .Contentfooter {
     display: flex;
     justify-content: center;
     gap: 15rem;
-    /* border: #1e6ce1 solid 2px; */
-    width: 80%;
-}
-.Contentfooter div {
-    /* border: 2px solid ; */
-    border-color: grad;
-    height: 100%;
 }
 .smallContent {
     height: 100%;
@@ -203,4 +198,8 @@ footer h1 {
 }
 #yearFoot {
     font-size: 12px;
+}
+#section1{
+    width: 100%;
+    height: 100vh;
 }

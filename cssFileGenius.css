@@ -183,7 +183,6 @@ footer h1 {
 .Contentfooter {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: 15rem;
     border: #1e6ce1 solid 2px;
     width: 80%;
@@ -197,3 +196,12 @@ footer h1 {
     height: 100%;
     width: 14rem;
 }
+/* @media screen and (max-width: 600px) {
+    .Contentfooter {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: none;
+    }
+} */

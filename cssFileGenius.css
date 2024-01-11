@@ -93,10 +93,6 @@ nav a:hover {
     height: 100%;
     transition-duration: .5s;
 }
-@keyframes menu {
-    
-    
-}
 .ProtflOfHeader h3 {
     font-size: 1.6rem;
     margin-bottom: 1rem;
@@ -177,7 +173,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ;
 }
 footer h1 {
     font-size: 22px;

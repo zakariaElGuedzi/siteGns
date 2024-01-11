@@ -74,13 +74,15 @@ nav a:hover {
 }
 @keyframes menuanimopen {
     0%{
-        left: -180px;
+        left: -380px;
     }
     100%{
         left: 0;
     }
 }
-
+#ClosePortfl {
+    transition: .5s;
+}
 #ClosePortfl:hover{
     transform: scale(1.2);
 }

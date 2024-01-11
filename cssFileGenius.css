@@ -15,6 +15,7 @@ body {
     position: relative;
     height: auto;
     box-sizing: border-box;
+    height: fit-content;
 }
 header {
     display: flex;
@@ -72,7 +73,7 @@ nav a:hover {
     display: none;
     padding: 20px;
     z-index: 99;
-    height: calc(100% - 40px);
+    height: fit-content;
     animation: menuanimopen ease 1s;
 }
 @keyframes menuanimopen {
@@ -172,12 +173,6 @@ nav a:hover {
     border-bottom-left-radius: 13%;
     border-bottom-right-radius: 5%;
 }
-
-
-
-
-
-
 
 /* footer */
 footer {

@@ -1,4 +1,4 @@
-let PorfolioHeader = document.getElementById('ProftlioHead');
+let PorfolioHeader = document.getElementById('Menu');
 
 function afficherPorf() {
     // Get the computed style

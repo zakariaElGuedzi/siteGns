@@ -15,32 +15,20 @@ body {
     box-sizing: border-box;
 }
 header {
-    background-color: #1e6ce1;
-}
-.div1Header {
-    background-color: #1e6ce1;
-    color: #fff;
-    text-align: center;
     display: flex;
+    background-color: #1e6ce1;
     justify-content: space-between;
     align-items: center;
 }
-
 img {
     height: 50px;
     margin-right: 10px;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 15px 80px;
+    padding: 15px 40px;
     margin: 0 10px;
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
@@ -49,7 +37,7 @@ nav a {
 
 nav a:hover {
     transform: scale(1.1);
-    border-bottom: 3px solid var(--secondary-color);
+    border-left: 3px solid rgb(254, 252, 252);
     color: var(--secondary-color);
 }
 .divPortDrkHeader {
@@ -74,30 +62,27 @@ nav a:hover {
     font-size:1.8rem;
 }
 
-.DivContentPrftlHEader {
-    flex-direction: column;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 23rem;
+#Menu{
+    width: 23rem ;
     background-color: #a8b1c2;
-    padding: 20px;
-    margin-top: 60px;
-}
-.ProtflOfHeader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: absolute;
-    height: 100%;
-    transition-duration: .5s;
+    display: none;
+    padding: 20px;
+    z-index: 99;
+    animation: menuanimopen ease 1s;
+    height: calc(100% + 100px);
 }
-.ProtflOfHeader h3 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    margin-left: 0.1rem;
-    margin-top: 2rem;
+@keyframes menuanimopen {
+    0%{
+        left: -180px;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+#ClosePortfl:hover{
+    transform: scale(1.2);
 }
 .imgLogoPort {
     width: 130px;

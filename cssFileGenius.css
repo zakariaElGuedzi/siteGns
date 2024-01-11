@@ -76,7 +76,7 @@ nav a:hover {
 
 .DivContentPrftlHEader {
     flex-direction: column;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     width: 23rem;

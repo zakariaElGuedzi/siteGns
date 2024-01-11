@@ -15,3 +15,8 @@ function ClosePortfli() {
     PorfolioHeader.style.display = "none";
 }
 
+// footer year
+let date = new Date();
+let year = date.getFullYear();
+let yearTimeFtr = document.getElementById('yearFoot')
+yearTimeFtr.innerHTML = `Privacy Policy | c ${year} Genius Center Design By GenuisCenter `

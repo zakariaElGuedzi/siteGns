@@ -1,6 +1,6 @@
 :root {
     --primary-color: #1e6ce1;
-    --secondary-color: #e36d0c;
+    --secondary-color: rgb(25, 38, 100);
     --accent-color: #e07223;
     --font-family: Arial, sans-serif;
 }
@@ -153,6 +153,30 @@ nav a:hover {
 }
 
 
+
+
+
+
+
+/* section metier article */
+.metierArticle {
+    background-color: var(--secondary-color);
+    color: #fff;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 13%;
+    border-bottom-right-radius: 5%;
+}
+
+
+
+
+
+
+
+/* footer */
 footer {
     width: 100%;
     height: 25rem;
@@ -199,7 +223,8 @@ footer h1 {
     transition: .5s;
 }
 .Media i:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    color:  rgb(51, 68, 152);
 }
 #yearFoot {
     font-size: 12px;

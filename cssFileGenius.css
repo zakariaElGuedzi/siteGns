@@ -158,10 +158,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(25, 38, 100,50%));
 }
 footer h1 {
     font-size: 22px;
-    border-bottom: 5px solid var(--secondary-color);
+    border-bottom: 5px solid rgb(25, 38, 100);
     width: 10rem;
 
 }
@@ -169,11 +170,11 @@ footer h1 {
     display: flex;
     justify-content: center;
     gap: 15rem;
-    border: #1e6ce1 solid 2px;
+    /* border: #1e6ce1 solid 2px; */
     width: 80%;
 }
 .Contentfooter div {
-    border: 2px solid ;
+    /* border: 2px solid ; */
     border-color: grad;
     height: 100%;
 }
@@ -181,12 +182,23 @@ footer h1 {
     height: 100%;
     width: 14rem;
 }
-/* @media screen and (max-width: 600px) {
-    .Contentfooter {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: none;
-    }
-} */
+.smallContent2 {
+    font-size: x-large;
+}
+.smallContent2 h5 {
+    margin-bottom: .6rem;
+}
+.Media {
+    display: flex;
+    gap: 2rem;
+}
+.Media i {
+    font-size: 1.8rem;
+    transition: .5s;
+}
+.Media i:hover {
+    transform: scale(1.1);
+}
+#yearFoot {
+    font-size: 12px;
+}

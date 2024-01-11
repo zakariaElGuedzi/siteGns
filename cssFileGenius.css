@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #1e6ce1;
+    --secondary-color: #e36d0c;
+    --accent-color: #e07223;
+    --font-family: Arial, sans-serif;
+}
+* {
+    font-family: 'Poppins', sans-serif;}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #1e6ce1;
+}
+.div1Header {
+    background-color: #1e6ce1;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 80px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: ease-in-out 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    border-left: 3px solid rgb(254, 252, 252);
+    color: var(--secondary-color);
+}
+.divPortDrkHeader {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 45px;
+}
+.divPortDrkHeader i {
+    padding-left: 30px;
+}
+.fa-regular {
+    cursor: pointer;
+    font-size:1.8rem;
+    transition: ease-in-out 0.5s;
+}
+.fa-regular:hover {
+    color: var(--secondary-color);
+}
+.fa-solid  {
+    cursor: pointer;
+    font-size:1.8rem;
+}
+
+.DivContentPrftlHEader {
+    width: 23rem;
+    margin: 10px 0;
+    height: fit-content;
+}
+.DivContentPrftlHEader {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ProtflOfHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #a8b1c2;
+    width: 18rem;
+    flex-direction: column;
+    position: absolute;
+    display: none;
+    padding: 50px 60px;
+    transition-duration: .5s;
+}
+.ProtflOfHeader h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 0.1rem;
+    margin-top: 2rem;
+}
+.imgLogoPort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    height: 130px;
+    padding-right: 5rem;
+}
+.imgAndRmv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+}
+.imgAndRmv i {
+    color: var(--secondary-color);
+}
+.fa-xmark{
+    font-size: 2rem;
+}
+.AbotAnddivL {
+    align-items: center;
+    flex-direction: column;
+}
+.AbotAnddivL p{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2rem;
+    max-width: fit-content;
+}
+.imgGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjust as needed */
+}
+.imgGrid img {
+    max-width: 30%; /* Adjust as needed */
+    margin: 10px; /* Add some space between images */
+    margin-left: 15px;
+    width: 5rem;
+    border-radius: 10px;
+    height: 5rem;
+    box-shadow: 0 0 30px rgb(96, 95, 95);
+    transition: .5s;
+}
+.imgGrid img:hover {
+    transform: scale(1.05);
+}
+.AbotAnddivLInfos {
+    flex-direction: column;
+    width: 100%;
+}
+.AbotAnddivLInfos i {
+    padding-right: 10px;
+    font-size: 1.3rem;
+} 
+.AbotAnddivLInfos.social {
+    flex-direction: row;
+} 
+.AbotAnddivLInfos.social i{
+    /* cursor: pointer; */
+    font-size:2rem;
+    padding-left: 2rem;
+    transition: .5s;
+}
+.AbotAnddivLInfos.social i:hover{
+        color:var(--secondary-color) ;
+}
+
+

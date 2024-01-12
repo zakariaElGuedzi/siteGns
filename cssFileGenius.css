@@ -287,7 +287,6 @@ svg{
     box-shadow: 2px 2px 25px rgb(190, 190, 190);
     border-radius: 15px;
     padding: 1rem;
-<<<<<<< Updated upstream
     height: fit-content;
     transition: .1s ease;
 }
@@ -295,9 +294,8 @@ svg{
     /* transform: scale(1.02); */
     /* border: var(--secondary-color) 2px solid; */
     border-left: 3px solid var(--secondary-color);
-=======
+
     height: auto;
->>>>>>> Stashed changes
 }
 
 .article .date {

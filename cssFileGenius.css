@@ -178,7 +178,7 @@ nav a:hover {
     height: 8rem;
     position: relative;
     box-shadow: 2px 2px 17px var(--secondary-color);
-    padding-top: 40px;
+    padding-top: 60px;
 }
 .svgsec{
     position: relative;

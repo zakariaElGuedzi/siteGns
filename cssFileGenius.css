@@ -380,9 +380,6 @@ footer img {
     box-shadow: 2px 2px 15px rgb(172, 171, 171);
 
 }
-.MapsSection:hover{
-    border-left: 3px solid var(--secondary-color);
-}
 .maps{
     display: flex;
     justify-content: space-between;

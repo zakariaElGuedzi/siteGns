@@ -180,11 +180,17 @@ nav a:hover {
     box-shadow: 2px 2px 17px var(--secondary-color);
     padding-top: 40px;
 }
+.svgsec{
+    position: relative;
+}
 svg{
     width: 50px;
     height: 50px;
     color: rgb(255, 230, 0);
-    opacity: .8;
+    position: absolute;
+    right: 225px;
+    bottom: 25px;
+    /* opacity: 0.8; */
 }
 
 /* sercle */
@@ -277,11 +283,11 @@ svg{
     width: 22rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     box-shadow: 2px 2px 25px rgb(190, 190, 190);
     border-radius: 15px;
     padding: 1rem;
+<<<<<<< Updated upstream
     height: fit-content;
     transition: .1s ease;
 }
@@ -289,6 +295,9 @@ svg{
     /* transform: scale(1.02); */
     /* border: var(--secondary-color) 2px solid; */
     border-left: 3px solid var(--secondary-color);
+=======
+    height: auto;
+>>>>>>> Stashed changes
 }
 
 .article .date {
@@ -363,4 +372,19 @@ footer img {
 #section1{
     width: 100%;
     height: 100vh;
+}
+.MapsSection{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    margin: 7rem;
+    box-shadow: 2px 2px 15px rgb(172, 171, 171);
+
+}
+.maps{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
 }

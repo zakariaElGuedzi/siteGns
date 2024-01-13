@@ -277,7 +277,7 @@ svg{
     background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
     animation: cercleanim2 10s ease-in-out infinite alternate; 
     margin-left: -14rem;
-    background-image: url(/img/femmecasiste.webp);
+    background-image: url(img/femmecasiste.webp);
     background-position: 50%;
     background-size: 20rem;
     background-repeat: no-repeat;

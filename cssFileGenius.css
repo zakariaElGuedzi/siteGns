@@ -277,7 +277,7 @@ svg{
     background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
     animation: cercleanim2 10s ease-in-out infinite alternate; 
     margin-left: -14rem;
-    background-image: url(femmecasiste.webp);
+    background-image: url(/img/femmecasiste.webp);
     background-position: 50%;
     background-size: 20rem;
     background-repeat: no-repeat;
@@ -563,9 +563,6 @@ footer img {
     }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) { 
-    body{
-        /* background-color: #e07223; */
-    }
     .articles{
         flex-wrap: wrap;
     }

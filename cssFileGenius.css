@@ -6,7 +6,6 @@
 }
 * {
     font-family: 'Poppins', sans-serif;
-    /* border: 1px solid red; */
 }
 body {
     margin: 0;
@@ -14,7 +13,6 @@ body {
     font-family: Arial, sans-serif;
     position: relative;
     height: auto;
-    box-sizing: border-box;
     height: fit-content;
 }
 header {
@@ -25,6 +23,8 @@ header {
     align-items: center;
     z-index: 98;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px 0 0;
 }
 header img {
     height: 65px;
@@ -34,7 +34,7 @@ header img {
 }
 nav {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 nav a {
     color: #fff;
@@ -57,11 +57,22 @@ nav a:hover {
 .divPortDrkHeader {
     width: 60px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+}
+.Bars{
+    display: none;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+}
+.Bars:hover{
+    color: #192664;
 }
 .fa-regular {
     cursor: pointer;
     font-size:1.8rem;
+    color: white;
+
     transition: ease-in-out 0.5s;
 }
 .fa-regular:hover {
@@ -83,15 +94,63 @@ nav a:hover {
     overflow: scroll;    
     animation: menuanimopen ease 1s;
 }
+#Menu2{
+    width: 23rem ;
+    background-color: #a8b1c2;
+    position: fixed;
+    right: 0;
+    display: none;
+    padding: 0;
+    z-index: 99;
+    height: 100%;
+    overflow: scroll; 
+    animation: menuanimopen2 ease 1s;
+
+}
 .Menu-all{
     padding: 20px 0;
 }
+.Menu-all2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AllMenusOpen{
+    display: flex;
+}
+.Navig ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Navig ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-align: center;
+
+}
+.Navig ul li a:hover{
+    border-bottom: #192664 3px solid;
+}
 @keyframes menuanimopen {
     0%{
-        left: -380px;
+        left: -500px;
     }
     100%{
         left: 0;
+    }
+}
+@keyframes menuanimopen2 {
+    0%{
+        right: -500px;
+    }
+    100%{
+        right: 0;
     }
 }
 #ClosePortfl {
@@ -207,7 +266,7 @@ svg{
     height: 14rem;
     background: var(--secondary-color);
     background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
-    animation: cercleanim 10s ease-in-out infinite alternate; /* Added infinite and alternate for continuous animation */
+    animation: cercleanim 10s ease-in-out infinite alternate; 
 }
 .cercle2 {
     margin: 20px 0px;
@@ -216,9 +275,9 @@ svg{
     height: 13rem;
     background: var(--secondary-color);
     background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
-    animation: cercleanim2 10s ease-in-out infinite alternate; /* Added infinite and alternate for continuous animation */
+    animation: cercleanim2 10s ease-in-out infinite alternate; 
     margin-left: -14rem;
-    background-image: url(femmecasiste.webp);
+    background-image: url(img/femmecasiste.webp);
     background-position: 50%;
     background-size: 20rem;
     background-repeat: no-repeat;
@@ -263,11 +322,9 @@ svg{
 /* section Articles */
 .sectionArticles {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     height: fit-content;
+    box-sizing: border-box;
+    padding: 0 50px;
 }
 .sectionArticles img {
     width: 100%;
@@ -275,9 +332,14 @@ svg{
     border-radius: 12px;
     margin: none;
 }
+.sectionArticles h2{
+    text-align: center;
+}
 .articles {
     display: flex;
     gap: 5rem;
+    justify-content: center;
+
 }
 .article {
     width: 22rem;
@@ -291,8 +353,6 @@ svg{
     transition: .1s ease;
 }
 .article:hover {
-    /* transform: scale(1.02); */
-    /* border: var(--secondary-color) 2px solid; */
     border-left: 3px solid var(--secondary-color);
     height: auto;
 }
@@ -309,7 +369,7 @@ svg{
     justify-content: space-between;
 }
 .description{
-    width: 350px;
+    width: fit-content;
 }
 .articledatediscription{
     width: 100%;
@@ -320,7 +380,7 @@ svg{
 /* footer */
 footer {
     width: 100%;
-    height: 25rem;
+    height: 100%;
     background: #8d8989;
     display: flex;
     align-items: center;
@@ -378,9 +438,132 @@ footer img {
     border-radius: 15px;
     margin: 7rem;
     box-shadow: 2px 2px 15px rgb(172, 171, 171);
+    box-sizing: border-box;
 }
 .maps{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
+    width: 100%;
 }
+.maps iframe{
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #192664; 
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #FFE600; 
+}
+@media all and (max-width: 480px) {
+    nav{
+        display: none;
+    }
+    .Bars{
+        display: flex;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+    .sectionArticles {
+        padding: 0 20px;
+    }
+    .Contentfooter{
+        display: flex;
+        width: fit-content;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 30px 50px;
+    }
+    .smallContent,.smallContent2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .smallContent2 h1{
+        text-align: center;
+    }
+    .MapsSection{
+        margin: 20px;
+    }
+    .maps{
+        flex-wrap: wrap;
+    }
+    #Menu{
+        width: 19rem ;
+    }
+    #Menu2{
+        width: 21rem ;
+    }
+}
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    nav{
+        display: none;
+    }
+    .Bars{
+        display: flex;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+    .Contentfooter{
+        display: flex;
+        width: fit-content;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+    .smallContent{
+        padding: 0 50px;
+        width: fit-content;
+    }
+    .MapsSection{
+        margin: 20px;
+    }
+    .maps{
+        flex-wrap: wrap;
+    }
+
+}
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    nav{
+        display: none;
+    }
+    .Bars{
+        display: flex;
+    }
+    .articles{
+        flex-wrap: wrap;
+    }
+    .Contentfooter{
+        display: flex;
+        gap: 60px;
+    
+    }
+    .MapsSection{
+        margin: 20px;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .articles{
+        flex-wrap: wrap;
+    }
+    .Contentfooter{
+        display: flex;
+        gap: 100px;
+    }
+    .MapsSection{
+        margin: 20px;
+    }
+}
+

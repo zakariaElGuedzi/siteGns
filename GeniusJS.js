@@ -1,20 +1,22 @@
 let PorfolioHeader = document.getElementById('Menu');
+let OpenRespoMenu = document.getElementById("OpenMark")
+let CloseresponMenu = document.getElementById("ClosePortfl2")
+let ResMenu = document.getElementById("Menu2")
 
 function afficherPorf() {
     // Get the computed style
-    let computedStyle = window.getComputedStyle(PorfolioHeader);
-
-    // Check the display property in the computed style
-    if (computedStyle.display === "none") {
-        PorfolioHeader.style.display = "flex";
-    } else {
-        PorfolioHeader.style.display = "none";
-    }
+    PorfolioHeader.style.display = "flex"
 }
 function ClosePortfli() {
     PorfolioHeader.style.display = "none";
 }
+OpenRespoMenu.addEventListener("click",()=>{
+    ResMenu.style.display = "flex"
+})
+CloseresponMenu.addEventListener("click",()=>{
+    ResMenu.style.display = "none"
 
+})
 // footer year
 let date = new Date();
 let year = date.getFullYear();

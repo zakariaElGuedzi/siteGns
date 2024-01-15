@@ -6,6 +6,10 @@
 }
 * {
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+button {
+    cursor: pointer;
 }
 body {
     margin: 0;
@@ -18,7 +22,7 @@ body {
 header {
     position: fixed;
     display: flex;
-    background-color: #1e6ce1;
+    background-color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
     z-index: 98;
@@ -50,8 +54,8 @@ nav a {
 
 nav a:hover {
     transform: scale(1.1);
-    color: var(--secondary-color);
-    border-left: 3px solid var(--secondary-color);
+    color: white;
+    border-left: 3px solid white;
 }
 
 .divPortDrkHeader {
@@ -72,7 +76,6 @@ nav a:hover {
     cursor: pointer;
     font-size:1.8rem;
     color: white;
-
     transition: ease-in-out 0.5s;
 }
 .fa-regular:hover {
@@ -93,6 +96,9 @@ nav a:hover {
     height: 100%;
     overflow: scroll;    
     animation: menuanimopen ease 1s;
+    background: linear-gradient( to bottom,rgb(53, 74, 144),rgb(25, 37, 100));
+    color: #fff;
+
 }
 #Menu2{
     width: 23rem ;
@@ -224,6 +230,66 @@ nav a:hover {
 .AbotAnddivLInfos.social i:hover{
         color:var(--secondary-color) ;
 }
+/* HomeFirstSection */
+.HomeFirstSection {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30rem;
+    box-sizing: border-box;
+}
+.writFirstDiv {
+    margin-left: -12rem;
+    font-size: 1.8rem;
+}
+.writFirstDiv h2 {
+    border-bottom: 3px solid rgb(255, 204, 0);
+}
+.writFirstDiv button {
+    box-shadow: 0px 0px 20px rgb(129, 129, 129);
+    border: none;
+    border-bottom: 3px solid rgb(255, 204, 0);
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+.writFirstDiv button:hover {
+    transform: scale(1.1);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+/* sercle */
+.serceles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.cercle1 {
+    margin: 20px 0px;
+    border-radius: 20% 50% 10% 50%;
+    width: 35rem;
+    height: 35rem;
+    background: var(--secondary-color);
+    background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
+    animation: cercleanim 10s ease-in-out infinite alternate; 
+}
+.cercle2 {
+    margin: 20px 0px;
+    border-radius: 20% 50% 10% 50%;
+    width: 30rem;
+    height: 30rem;
+    background: var(--secondary-color);
+    background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
+    animation: cercleanim2 10s ease-in-out infinite alternate; 
+    /* margin-left: -25rem; */
+    background-image: url(img/femmecasiste.webp);
+    background-position: 50%;
+    background-size: 45rem;
+    background-repeat: no-repeat;
+}
 /* section metier article */
 .metierArticle {
     background-color: var(--secondary-color);
@@ -252,36 +318,7 @@ svg{
     /* opacity: 0.8; */
 }
 
-/* sercle */
-.serceles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.cercle1 {
-    margin: 20px 0px;
-    border-radius: 20% 50% 10% 50%;
-    width: 14rem;
-    height: 14rem;
-    background: var(--secondary-color);
-    background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
-    animation: cercleanim 10s ease-in-out infinite alternate; 
-}
-.cercle2 {
-    margin: 20px 0px;
-    border-radius: 20% 50% 10% 50%;
-    width: 13rem;
-    height: 13rem;
-    background: var(--secondary-color);
-    background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
-    animation: cercleanim2 10s ease-in-out infinite alternate; 
-    margin-left: -14rem;
-    background-image: url(img/femmecasiste.webp);
-    background-position: 50%;
-    background-size: 20rem;
-    background-repeat: no-repeat;
-}
 
 @keyframes cercleanim {
     0% {
@@ -376,7 +413,34 @@ svg{
     display: flex;
     flex-direction: column;
 }
-
+/* have a quesion div */
+.havequesitonsection {
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background: #2949b4;
+    color: #ffffff;
+    box-sizing: border-box;
+    background-image: url(iStock-143918313-scaled.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.havequesitonsection div {
+    padding-left: 6em;
+}
+.havequesitonsection span {
+    color: #FFE600;
+}
+.havequesitonsection button {
+    padding: 15px 25px;
+    color: #2949b4;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .2s;
+}
+.havequesitonsection button:hover {
+    transform: scaleX(1.09);
+}
 /* footer */
 footer {
     width: 100%;
@@ -440,10 +504,32 @@ footer img {
     box-shadow: 2px 2px 15px rgb(172, 171, 171);
     box-sizing: border-box;
 }
+.MapsSection h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MapsSection p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MapsSection i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
 .maps{
     display: flex;
+    align-items: center;
     justify-content: center;
+    /* flex-direction: row; */
     gap: 2rem;
+    width: 100%;
+}
+.maps div{
     width: 100%;
 }
 .maps iframe{
@@ -506,6 +592,48 @@ footer img {
     #Menu2{
         width: 21rem ;
     }
+    .havequesitonsection {
+        backdrop-filter: blur(5px);
+    }
+    .havequesitonsection div {
+        padding-left: 0;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        filter: none; /* Vous pouvez ajuster la valeur de "5px" selon le flou souhaité */
+        backdrop-filter: blur(10px);
+    }
+    .HomeFirstSection {
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 5rem;
+    }
+    .writFirstDiv {
+        font-size: 1.2rem;
+        padding-left: 4rem;
+    }
+    .serceles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20rem;
+    }
+    .cercle1 {
+        margin: 20px 0px;
+        border-radius: 20% 50% 10% 50%;
+        width: 15rem;
+        height: 15rem;
+        background: var(--secondary-color);
+        background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
+        animation: cercleanim 10s ease-in-out infinite alternate; 
+        margin-top: 25rem;
+    }
+    .cercle2 {
+        /* width: 23.8rem;
+        height: 24rem; */
+        width: 100%;
+        height: 100%;
+    }
 }
 @media all and (min-width: 480px) and (max-width: 768px) { 
     nav{
@@ -533,7 +661,19 @@ footer img {
     .maps{
         flex-wrap: wrap;
     }
-
+    .havequesitonsection {
+        backdrop-filter: blur(5px);
+    }
+    .havequesitonsection div {
+        padding-left: 0;
+        /* color: #000000; */
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        /* opacity: 1.3; */
+        filter: none; /* Vous pouvez ajuster la valeur de "5px" selon le flou souhaité */
+        backdrop-filter: blur(10px);
+    }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) { 
     nav{

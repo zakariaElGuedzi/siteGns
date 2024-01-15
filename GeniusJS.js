@@ -4,9 +4,15 @@ let CloseresponMenu = document.getElementById("ClosePortfl2")
 let ResMenu = document.getElementById("Menu2")
 
 function afficherPorf() {
-    // Get the computed style
-    PorfolioHeader.style.display = "flex"
+    // var PorfolioHeader = document.getElementById("PorfolioHeader");
+
+    if (PorfolioHeader.style.display === "" || PorfolioHeader.style.display === "none") {
+        PorfolioHeader.style.display = "flex";
+    } else if (PorfolioHeader.style.display === "flex") {
+        PorfolioHeader.style.display = "none";
+    }
 }
+
 function ClosePortfli() {
     PorfolioHeader.style.display = "none";
 }

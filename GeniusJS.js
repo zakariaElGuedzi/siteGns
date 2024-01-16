@@ -4,16 +4,12 @@ let CloseresponMenu = document.getElementById("ClosePortfl2")
 let ResMenu = document.getElementById("Menu2")
 
 function afficherPorf() {
-    // var PorfolioHeader = document.getElementById("PorfolioHeader");
-
     if (PorfolioHeader.style.display === "" || PorfolioHeader.style.display === "none") {
         PorfolioHeader.style.display = "flex";
     } else if (PorfolioHeader.style.display === "flex") {
         
         PorfolioHeader.style.display = "none"
     }
-    document.body.style.overflow = "hidden"
-
 }
 
 function ClosePortfli() {

@@ -596,6 +596,9 @@ footer img {
     filter: grayscale(100%) brightness(0%);
 
 }
+.untogglescroll{
+    overflow: hidden;
+}
 @media all and (max-width: 480px) {
     nav{
         display: none;

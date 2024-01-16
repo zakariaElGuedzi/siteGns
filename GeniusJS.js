@@ -8,15 +8,18 @@ function afficherPorf() {
 
     if (PorfolioHeader.style.display === "" || PorfolioHeader.style.display === "none") {
         PorfolioHeader.style.display = "flex";
-        document.body.style.overflow = "hidden"
     } else if (PorfolioHeader.style.display === "flex") {
-        PorfolioHeader.style.display = "none";
-        document.body.style.overflow = "scroll"
+        
+        PorfolioHeader.style.display = "none"
     }
+    document.body.style.overflow = "hidden"
+
 }
 
 function ClosePortfli() {
     PorfolioHeader.style.display = "none";
+    document.body.style.overflow = "scroll"
+
 }
 OpenRespoMenu.addEventListener("click",()=>{
     ResMenu.style.display = "flex"

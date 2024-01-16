@@ -28,6 +28,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px 0 0;
+    z-index: 98;
 }
 header img {
     height: 65px;
@@ -236,10 +237,11 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30rem;
     box-sizing: border-box;
     height: 100%;
     padding-top: 65px;
+    gap: 20rem;
+    width: 100%;
 }
 .writFirstDiv {
     margin-left: -12rem;
@@ -272,8 +274,8 @@ nav a:hover {
 .cercle1 {
     margin: 20px 0px;
     border-radius: 20% 50% 10% 50%;
-    width: 35rem;
-    height: 35rem;
+    width: 25rem;
+    height: 25rem;
     background: var(--secondary-color);
     background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
     animation: cercleanim 10s ease-in-out infinite alternate; 
@@ -281,8 +283,8 @@ nav a:hover {
 .cercle2 {
     margin: 20px 0px;
     border-radius: 20% 50% 10% 50%;
-    width: 30rem;
-    height: 30rem;
+    width: 22rem;
+    height: 22rem;
     background: var(--secondary-color);
     background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
     animation: cercleanim2 10s ease-in-out infinite alternate; 
@@ -296,7 +298,6 @@ nav a:hover {
 .metierArticle {
     background-color: #192664;
     color: #fff;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,6 +565,37 @@ footer img {
 .Menu-all ul li a:hover{
     color: #1e6ce1;
 }
+.Socialss2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    gap: 15px;
+    right: -70px;
+}
+.Socialss2 h3{
+    margin: 0;
+}
+.line{
+    width: 40px;
+    height: 4px;
+    background-color: #FFE600;
+}
+.GCP{
+    position: relative;
+}
+.GCP h2{
+    position: relative;
+    
+}
+.GCP img{
+    position: absolute;
+    width: 550px;
+    left: -67px;
+    top: -10px;
+    filter: grayscale(100%) brightness(0%);
+
+}
 @media all and (max-width: 480px) {
     nav{
         display: none;
@@ -653,6 +685,14 @@ footer img {
     .GCP{
         width: 100%;
     }
+    .Socialss2{
+        display: none;
+    }
+    .GCP img{
+        width: 380px;
+        top: 15px;
+        left: -50px;
+    }
 }
 @media all and (min-width: 480px) and (max-width: 768px) { 
     nav{
@@ -717,6 +757,14 @@ footer img {
         width: 100%;
         height: 100%;
     }
+    .Socialss2{
+        display: none;
+    }
+    .GCP img{
+        width: 400px;
+        top: 15px;
+        left: -60px;
+    }
 }
 @media all and (min-width: 768px) and (max-width: 1024px) { 
     nav{
@@ -749,6 +797,14 @@ footer img {
     }
     .serceles{
         padding: 0;
+    }
+    .Socialss2{
+        display: none;
+    }
+    .GCP img{
+        width: 477px;
+        top: -5px;
+        left: -30px;
     }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) { 

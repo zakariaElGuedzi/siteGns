@@ -8,8 +8,10 @@ function afficherPorf() {
 
     if (PorfolioHeader.style.display === "" || PorfolioHeader.style.display === "none") {
         PorfolioHeader.style.display = "flex";
+        document.body.style.overflow = "hidden"
     } else if (PorfolioHeader.style.display === "flex") {
         PorfolioHeader.style.display = "none";
+        document.body.style.overflow = "scroll"
     }
 }
 
@@ -18,10 +20,11 @@ function ClosePortfli() {
 }
 OpenRespoMenu.addEventListener("click",()=>{
     ResMenu.style.display = "flex"
+    document.body.style.overflow = "hidden"
 })
 CloseresponMenu.addEventListener("click",()=>{
     ResMenu.style.display = "none"
-
+    document.body.style.overflow = "scroll"
 })
 // footer year
 let date = new Date();

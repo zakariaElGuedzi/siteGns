@@ -654,7 +654,7 @@ footer img {
     .HomeFirstSection {
         flex-direction: column;
         box-sizing: border-box;
-        gap: 5rem;
+        gap: 3rem;
     }
     .writFirstDiv {
         font-size: 1.2rem;
@@ -669,6 +669,7 @@ footer img {
         align-items: center;
         justify-content: center;
         height: fit-content;
+        padding: 20px 0;
     }
     .cercle1 {
         margin: 20px 0px;

@@ -7,23 +7,22 @@ function afficherPorf() {
     if (PorfolioHeader.style.display === "" || PorfolioHeader.style.display === "none") {
         PorfolioHeader.style.display = "flex";
     } else if (PorfolioHeader.style.display === "flex") {
-        
         PorfolioHeader.style.display = "none"
     }
 }
 
 function ClosePortfli() {
     PorfolioHeader.style.display = "none";
-    document.body.style.overflow = "scroll"
+    document.body.style.overflowY = "scroll"
 
 }
 OpenRespoMenu.addEventListener("click",()=>{
     ResMenu.style.display = "flex"
-    document.body.style.overflow = "hidden"
+    document.body.style.overflowY = "hidden"
 })
 CloseresponMenu.addEventListener("click",()=>{
     ResMenu.style.display = "none"
-    document.body.style.overflow = "scroll"
+    document.body.style.overflowY = "scroll"
 })
 // footer year
 let date = new Date();

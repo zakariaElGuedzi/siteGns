@@ -374,8 +374,7 @@ svg{
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
-    padding-bottom: 3rem;
-    padding-top: -3rem;
+    padding: 40px;
     position: relative;
 }
 .galleryDiv i{
@@ -449,7 +448,7 @@ svg{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: -15px 0 15rem 0;
+    margin: -15px 0 8rem 0;
 }
 
 .divProSuivi div{
@@ -488,6 +487,7 @@ svg{
     height: fit-content;
     box-sizing: border-box;
     padding: 0 50px;
+    margin-top: 20px;
 }
 .sectionArticles img {
     width: 100%;
@@ -525,11 +525,14 @@ svg{
     padding: 3px 7px;
     border-radius: 15px;
     font-size: 13px;
+    width: fit-content;
 }
 .dateAndtitlearticl {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.dateAndtitlearticl h3{
+    text-align: center;
 }
 .description{
     width: fit-content;

@@ -329,8 +329,6 @@ svg{
     /* opacity: 0.8; */
 }
 
-
-
 @keyframes cercleanim {
     0% {
         border-radius: 100% 60% 95% 100%;
@@ -364,6 +362,82 @@ svg{
     100% {
         border-radius: 100% 50% 100% 100%;
     }
+}
+
+/* gallery div */
+.galleryDiv {
+    background-color: #ebebf3;
+    padding: 0rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    padding-top: -3rem;
+}
+.galleryDiv i{
+    font-size: 6rem;
+    color: #8d8989;
+    opacity: .5;
+    position: relative;
+    top: 14rem; 
+    left: 40rem;
+    box-sizing: border-box;
+    transform: rotate(45deg); 
+    padding-top: -3rem;
+}
+.titlegalry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -2rem;
+}
+.titlegalry h2 {
+    margin-left: -12rem;
+}
+.divTipgallery {
+    text-align: center;
+    margin-top: -8rem;
+}
+.galerie {
+    height: 40rem;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
+}
+.item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.item1 {
+    grid-column: 1 / span 2;
+    background-image: url(iStock-143918313-scaled.jpg);
+    border-top-left-radius: 15px;
+}
+.item2 {
+    background-image: url(menonstock.webp);
+}
+.item3 {
+    grid-column: 2 / span 2;
+    background-image: url(iStock-143918313-scaled.jpg);
+}
+.item4 {
+    grid-row: 2 / span 3;
+    background-image: url(femmecasiste.webp);
+}
+.item5 {
+    grid-column: 2 / span 2;
+    background-image: url(fdf87c17b739fd2a24366cca956269e2d6046a84-7360x4912.webp);
+    border-bottom-right-radius: 15px;
+}
+.galerie img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* 3 divs de qualité */
@@ -403,7 +477,6 @@ svg{
     backdrop-filter: opacity(10%); /* Set the opacity of the background using backdrop-filter */
     transform: scale(1.09);
 }
-
 
 .divProSuivi div p {
     margin-top: -10px;
@@ -504,6 +577,7 @@ footer {
     align-items: center;
     justify-content: center;
     background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(25, 38, 100,50%));
+    padding-bottom: 3rem;
 }
 footer h1 {
     font-size: 22px;
@@ -579,7 +653,6 @@ footer img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: row; */
     gap: 2rem;
     width: 100%;
 }
@@ -650,7 +723,6 @@ footer img {
     left: -35px;
     top: 30px;
     filter: grayscale(100%) brightness(0%);
-
 }
 .untogglescroll{
     overflow: hidden;
@@ -828,6 +900,7 @@ footer img {
         top: 15px;
         left: 40px;
     }
+
 }
 @media all and (min-width: 820px) and (max-width: 1024px) { 
     nav{

@@ -408,6 +408,12 @@ svg{
     grid-template-rows: repeat(3, 1fr);
     gap: .5rem;
 }
+.galerie div {
+    transition: .5s;
+}
+.galerie div:hover {
+    transform: scale(1.09);
+}
 .item {
     background-repeat: no-repeat;
     background-size: cover;

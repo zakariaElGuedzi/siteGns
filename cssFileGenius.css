@@ -246,7 +246,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    height: 75vh;
+    height: fit-content;
     padding-top: 65px;
     gap: 25rem;
     width: 100%;
@@ -315,6 +315,7 @@ nav a:hover {
     position: relative;
     box-shadow: 2px 2px 17px var(--secondary-color);
     padding-bottom: 3rem;
+    margin: 0;
 }
 .svgsec{
     position: relative;
@@ -375,14 +376,14 @@ svg{
     gap: 3rem;
     padding-bottom: 3rem;
     padding-top: -3rem;
+    position: relative;
 }
 .galleryDiv i{
     font-size: 6rem;
     color: #8d8989;
     opacity: .5;
-    position: relative;
-    top: 14rem; 
-    left: 40rem;
+    position: absolute;
+    right: 20px;
     box-sizing: border-box;
     transform: rotate(45deg); 
     padding-top: -3rem;
@@ -398,7 +399,6 @@ svg{
 }
 .divTipgallery {
     text-align: center;
-    margin-top: -8rem;
 }
 .galerie {
     height: 40rem;
@@ -449,8 +449,7 @@ svg{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 3rem 0;
-    margin-top: -3rem;
+    margin: -15px 0 15rem 0;
 }
 
 .divProSuivi div{
@@ -462,7 +461,7 @@ svg{
     width: 20%;
     border-bottom-right-radius: 35px;
     border-top-left-radius: 35px;
-   background: linear-gradient(rgb(61, 48, 28),rgb(35, 36, 43));
+    background: linear-gradient(rgb(61, 48, 28),rgb(35, 36, 43));
     transition: .5s;
     cursor: pointer;
     z-index: 50;
@@ -733,7 +732,8 @@ footer img {
     width: fit-content;
     text-align: center;
 }
-@media all and (max-width: 480px) {
+/*Phone*/
+@media all and (max-width: 480px) { 
     nav{
         display: none;
     }
@@ -825,8 +825,19 @@ footer img {
     }
     .GCP img{
         width: 330px;
-        top: 15px;
-        left: 0;
+    }
+    .divProSuivi{
+        height: fit-content;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .divProSuivi div{
+        width: fit-content;
+        margin: -20px 2rem 0 2rem;
+    }
+    .galerie {
+        height: 25rem;
+        width: 22rem;
     }
 }
 @media all and (min-width: 480px) and (max-width: 820px) { 
@@ -899,6 +910,23 @@ footer img {
         width: 400px;
         top: 15px;
         left: 40px;
+    }
+    .divProSuivi{
+        height: fit-content;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .divProSuivi div{
+        width: fit-content;
+        margin: -20px 2rem 0 2rem;
+
+    }
+    .divProSuivi div:hover{
+        transform: scale(1.03);
+    }
+    .galerie {
+        height: 27rem;
+        width: 27rem;
     }
 
 }

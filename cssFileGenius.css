@@ -105,7 +105,7 @@ nav a:hover {
     height: 100%;
     overflow: scroll;    
     animation: menuanimopen ease 1s;
-    background: linear-gradient( to bottom,rgb(53, 74, 144),rgb(25, 37, 100));
+    background: linear-gradient( to bottom,rgb(235, 239, 255),rgb(25, 37, 100));
     color: #fff;
 
 }
@@ -367,7 +367,7 @@ svg{
 
 /* gallery div */
 .galleryDiv {
-    background-color: #ebebf3;
+    background-color: #f1f5f8;
     padding: 0rem 5rem;
     display: flex;
     align-items: center;
@@ -379,7 +379,7 @@ svg{
 }
 .galleryDiv i{
     font-size: 6rem;
-    color: #8d8989;
+    color: #bcbcbc;
     opacity: .5;
     position: absolute;
     right: 20px;
@@ -411,7 +411,7 @@ svg{
     transition: .5s;
 }
 .galerie div:hover {
-    transform: scale(1.09);
+    transform: scale(1.04);
 }
 .item {
     background-repeat: no-repeat;
@@ -445,6 +445,69 @@ svg{
     object-fit: cover;
 }
 
+/* review */
+.reviewsSec {
+    height: 80vh;
+    /* background-color: #3d3d3e; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+.containerReview {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    border: #d8d5d55f 8px solid;
+    height: 60%;
+    width: 70%;
+    padding: 2rem;
+}
+.smallContainerReview {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #1b1d23;
+    color: #fff;
+}
+.reviewDiv {
+    width: 35%;
+    background-image: url(femmecasiste.webp);
+    box-sizing: border-box;
+    height: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: none;
+    border-top-right-radius: 100px;
+    display: flex;
+    align-self: end;
+}
+.ReviewInfo{
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: column;
+    padding: 2rem 3rem;
+}
+.ReviewInfo p {
+    line-height: 30px;
+}
+.ReviewInfo h3 {
+    margin-bottom: -13px;
+}
+.ReviewInfo img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 13%;
+    width: 10%;
+}
 /* 3 divs de qualité */
 .divProSuivi {
     width: 100%;
@@ -696,7 +759,7 @@ footer img {
     font-size: 20px;
 }
 .Menu-all ul li a:hover{
-    color: #1e6ce1;
+    color: var(--primary-color);
 }
 .Socialss2{
     position: absolute;
@@ -714,6 +777,9 @@ footer img {
     width: 40px;
     height: 4px;
     background-color: #FFE600;
+}
+.line i {
+    cursor: pointer;
 }
 .GCP{
     position: relative;

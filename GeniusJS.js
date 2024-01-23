@@ -28,4 +28,4 @@ CloseresponMenu.addEventListener("click",()=>{
 let date = new Date();
 let year = date.getFullYear();
 let yearTimeFtr = document.getElementById('yearFoot')
-yearTimeFtr.innerHTML = `Privacy Policy | c ${year} Genius Center Design By GenuisCenter `
+yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By GenuisCenter `

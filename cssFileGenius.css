@@ -293,6 +293,14 @@ nav a:hover {
     background: linear-gradient(rgb(24, 26, 101),rgb(255, 204, 0));
     animation: cercleanim 10s ease-in-out infinite alternate; 
 }
+
+.hidden{
+    opacity: 0;
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+}
 .cercle2 {
     margin: 20px 0px;
     border-radius: 20% 50% 10% 50%;

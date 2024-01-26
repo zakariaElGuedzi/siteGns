@@ -28,4 +28,19 @@ CloseresponMenu.addEventListener("click",()=>{
 let date = new Date();
 let year = date.getFullYear();
 let yearTimeFtr = document.getElementById('yearFoot')
-yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By GenuisCenter `
+yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By GenuisCenter`
+
+const observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('show');
+        }else{
+            entry.target.classList.remove('show');
+
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));

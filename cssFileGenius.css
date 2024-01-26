@@ -381,7 +381,7 @@ svg{
     gap: 3rem;
     padding: 40px;
     position: relative;
-
+    margin: 0 0 70px 0;
 }
 .galleryDiv i{
     font-size: 6rem;
@@ -471,6 +471,7 @@ svg{
     width: 100%;
     box-sizing: border-box;
     flex-direction: column;
+    margin: 0 0 70px 0;
 }
 .reviewsSec i {
     cursor: default;

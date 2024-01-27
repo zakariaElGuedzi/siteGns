@@ -294,13 +294,13 @@ nav a:hover {
     animation: cercleanim 10s ease-in-out infinite alternate; 
 }
 
-.hidden{
+/* .hidden{
     opacity: 0;
     transition: all 1.7s;
 }
 .show{
     opacity: 1;
-}
+} */
 .cercle2 {
     margin: 20px 0px;
     border-radius: 20% 50% 10% 50%;
@@ -680,18 +680,35 @@ svg{
 }
 /* have a quesion div */
 .havequesitonsection {
-    width: 100%;
     margin-bottom: 3rem;
     padding: 3rem;
     background: #2949b4;
     color: #ffffff;
     box-sizing: border-box;
     background-image: url(iStock-143918313-scaled.jpg);
+    -webkit-background-size :cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position :center;
     background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
 }
-.havequesitonsection div {
-    padding-left: 6em;
+.Q-text{
+    position: relative;
+    z-index: 23;
+        padding-left: 6em;
+}
+.layer {
+    background-image: linear-gradient(0deg, rgba(38,38,38,0.7) 0%, rgba(38,38,38,0.7) 100%);  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 0;
 }
 .havequesitonsection span {
     color: #FFE600;
@@ -931,16 +948,16 @@ footer img {
     #Menu2{
         width: 21rem ;
     }
-    .havequesitonsection {
+    /* .havequesitonsection {
         backdrop-filter: blur(5px);
-    }
+    } */
     .havequesitonsection div {
         padding-left: 0;
-        padding: 10px;
+        /* padding: 10px; */
         border: none;
         border-radius: 10px;
         filter: none; /* Vous pouvez ajuster la valeur de "5px" selon le flou souhaité */
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
     }
     .HomeFirstSection {
         flex-direction: column;
@@ -1054,18 +1071,18 @@ footer img {
     .maps{
         flex-wrap: wrap;
     }
-    .havequesitonsection {
+    /* .havequesitonsection {
         backdrop-filter: blur(5px);
-    }
+    } */
     .havequesitonsection div {
         padding-left: 0;
         /* color: #000000; */
-        padding: 10px;
+        /* padding: 10px; */
         border: none;
         border-radius: 10px;
         /* opacity: 1.3; */
         filter: none; /* Vous pouvez ajuster la valeur de "5px" selon le flou souhaité */
-        backdrop-filter: blur(10px);
+        /* backdrop-filter: blur(10px); */
     }
     .HomeFirstSection {
         flex-direction: column;

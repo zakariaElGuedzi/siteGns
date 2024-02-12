@@ -728,13 +728,14 @@ svg{
     transform: scaleX(1.09);
 }
  /* location section  */
- .mapsvlleSection {
+ /* .mapsvlleSection {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border: 1px solid;
     flex-direction: column;
     padding: 1rem;
+    height: 70vh;
 }
 .mapsvlleSection button {
     padding: 1rem;
@@ -748,36 +749,39 @@ svg{
 }
 .locationEtVilleInfo {
     display: flex;
-    align-items: self-start;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
     border:  1px solid;
     padding: 1rem;
-    height: 50vh;
+    height: 100%;
     width: 80vw;
 }
 .warningAndlocalinfo {
-    display: flex;
-    align-items: self-end;
-    justify-content: space-around;
+    /* display: flex;
     align-items: center;
+    justify-content: center; */
+    /* align-items: center;
     flex-direction: column;
-    width: 100%;
-} 
-.warning {
+    width: 100%; */
+/* } 
+.warningAndlocalinfo h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+/* .warning {
     display: flex;
     align-items: end;
     justify-content: end;
-}
+} 
 .Localistionchoisi {
-    /* width: 50%; */
     border:  1px solid;
     height: 100%;
     width: 50%;
 }
 .titleLocal {
     display: flex;
-    /* align-items: center; */
     justify-content: start;
     flex-direction: column;
     border:  1px solid;
@@ -785,13 +789,14 @@ svg{
     height: 100%;
     font-weight: bold;
     font-size: 1.6rem;
-}
+} 
 .titleLocal p {
     margin-top: -20px;
 }
 .titleLocal h3,p {
     padding-left: 3rem;
-}
+} */
+
 /* footer */
 footer {
     width: 100%;

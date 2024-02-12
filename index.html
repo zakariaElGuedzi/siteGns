@@ -161,31 +161,28 @@
 </div>
 
 <!-- location section -->
-<div class="mapsvlleSection">
+<section class="mapsvlleSection">
     <h2>Notre Localisation</h2>
-    <div class="buttonVilles">
-        <button>ville 1</button>
-        <button>ville 2</button>
-        <button>ville 2</button>
-        <button>ville 3</button>
-        <button>ville 4</button>
-        <button>ville 5</button>
-    </div>
-    <div class="locationEtVilleInfo">
-        <div class="Localistionchoisi">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3237.648580095802!2d-5.804705124208786!3d35.75944137256216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQ1JzM0LjAiTiA1wrA0OCcwNy43Ilc!5e0!3m2!1sfr!2sma!4v1705022946045!5m2!1sfr!2sma" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="buttonVilles"  onclick="chngMaps(event)">
+            <button id="CASABlANCA"  adressNom="Al firdaous imm 2 2ème étage n 14 ain sbaa- bernoussi casablanca"    class="Mapsbutton"    data-map-url="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6660.073313634736!2d-7.649244586883114!3d33.422288657303504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1707762213468!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">CasaBlanca</button>
+            <button id="TANGER"      adressNom=""   class="Mapsbutton" >TANGER</button>
+            <button id="FES"         adressNom="Al-Atlas, rue Al-Zarqtouni, bâtiment n° 19, bureau n° 2"   class="Mapsbutton" >FES</button>
+            <button id="MEKNAS"      adressNom="gha casa"   class="Mapsbutton" >MEKNAS</button>
+            <button id="MOHAMMEDIA"  adressNom="gha casa"   class="Mapsbutton" >MOHAMMEDIA</button>
+            <button id="AL JADIDA"   adressNom="gha casa"   class="Mapsbutton" >AL JADIDA</button>
+            <button id="MARRAKECH"   adressNom="gha casa"   class="Mapsbutton" >MARRAKECH</button>
+            <button id="AGADIR"      adressNom="Quartier Al-Salam, rue Anzi, à proximité de la résidence universitaire, à côté du restaurant Timitar"     class="Mapsbutton" >AGADIR</button>
         </div>
-        <div class="warningAndlocalinfo">
-            <div class="titleLocal">
-                <h3>ville</h3>
-                <p>adresse : Lorem ipsum dolor sit.</p>
+        <div class="locationEtVilleInfo">
+            <div class="Localistionchoisi">
+                <iframe class="framMaps" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3237.648580095802!2d-5.804705124208786!3d35.75944137256216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDQ1JzM0LjAiTiA1wrA0OCcwNy43Ilc!5e0!3m2!1sfr!2sma!4v1705022946045!5m2!1sfr!2sma" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="warning">
-                <p style="color: red;">! Lorem ipsum dolor sit.</p>
+            <div class="warningAndlocalinfo">
+                    <h3  class="villeNomMaps" >ville</h3>
+                    <p  class="adressMaps" >adresse : Lorem ipsum dolor sit.</p>
             </div>
         </div>
-    </div>
-</div>
+</section>
 
 <!-- review -->
 <section class="reviewsSec hidden">
@@ -210,6 +207,85 @@
 
     </div>    
 </section>
+<style>
+    .mapsvlleSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8; /* Set your desired background color */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        height: 70vh;
+        border: 1px solid;
+        font-size: 1.2rem;
+    }
+    .mapsvlleSection h2 {
+        border-bottom: #333 2px solid;
+    }
+    .buttonVilles button {
+        margin: 5px;
+        padding: 15px 25px;
+        background-color: #3498db; /* Set your desired button background color */
+        color: #fff; /* Set text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: .5s;
+    }
+    .buttonVilles button:hover {
+        background-color: #e5690a;
+        transform: scale(1.1);
+    }
+    .locationEtVilleInfo {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid;
+        width:80vw;
+        margin-top: 20px;
+        height: 60%;
+        padding: 1rem;
+        height: 100%;
+        background-color: #ebe7ea;
+    }
+
+    .Localistionchoisi {
+        height: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Localistionchoisi iframe {
+        border: 2px solid #3498db; /* Match button color for consistency */
+        border-radius: 5px;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .warningAndlocalinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        padding-left: 1rem;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+    }
+
+    .warningAndlocalinfo h3 {
+        font-size: 2.1rem;
+        margin-bottom: -5px;
+        color: #333; /* Set your desired text color */
+    }
+
+</style>
 
 <!-- section3 Articels-->
 <section class="sectionArticles hidden">

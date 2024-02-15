@@ -737,13 +737,11 @@ svg{
     background-color: #f8f8f8; /* Set your desired background color */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-<<<<<<< Updated upstream
     height: 70vh;
-=======
-    height: fit-content;
+    /* height: fit-content; */
     /* border: 1px solid; */
->>>>>>> Stashed changes
     font-size: 1.2rem;
+    margin-bottom: 5rem;
 }
 .mapsvlleSection h2 {
     border-bottom: #333 2px solid;
@@ -792,23 +790,24 @@ svg{
     opacity: .2;
     font-size: 6em;
 }
-/* .Localistionchoisi {
+.Localistionchoisi {
     height: 85%;
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+    width: 100%;
+}
 .villeNomMaps {
     border-bottom: 2px var(--secondary-color) solid;
 }
-.Localistionchoisi {
+/* .Localistionchoisi {
     border-radius: 5px;
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     width: 100%;
     flex: 1;
-}
+} */
 
 .warningAndlocalinfo {
     display: flex;

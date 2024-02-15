@@ -737,12 +737,8 @@ svg{
     background-color: #f8f8f8; /* Set your desired background color */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-<<<<<<< Updated upstream
-    height: 70vh;
-=======
     height: fit-content;
     /* border: 1px solid; */
->>>>>>> Stashed changes
     font-size: 1.2rem;
 }
 .mapsvlleSection h2 {

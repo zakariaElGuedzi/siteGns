@@ -33,15 +33,11 @@ yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By Ge
 
 
 function chngMaps(event) {
-    let btnCLicked = event.target.classList.contains('Mapsbutton');
     let btnmaps = event.target.getAttribute('data-map-url');
     let villeNom = event.target.id;
     let adressNom = event.target.getAttribute('adressNom');
     document.querySelector('.framMaps').src = btnmaps ;
     document.querySelector('.villeNomMaps').innerHTML = villeNom ;
     document.querySelector('.adressMaps').innerHTML = adressNom ;
-    if (btnCLicked) {
-        event.target.style.color = "red";
-    }
 }
 

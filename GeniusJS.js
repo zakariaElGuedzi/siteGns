@@ -41,3 +41,11 @@ function chngMaps(event) {
     document.querySelector('.adressMaps').innerHTML = adressNom ;
 }
 
+var buttonVilles = document.getElementsByClassName("buttonVilles");
+var btns = document.getElementsByClassName("Mapsbutton")
+for (var i = 0; i < btns.length; i++) { 
+    btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current [0].className.replace("active", "");
+    this.className += " active" 
+})}

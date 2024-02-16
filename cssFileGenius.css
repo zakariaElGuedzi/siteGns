@@ -724,10 +724,6 @@ svg{
     letter-spacing: 2px;
     transition: .2s;
 }
-.havequesitonsection button:hover {
-    transform: scaleX(1.09);
-}
-/* location section */
 .mapsvlleSection {
     display: flex;
     justify-content: center;
@@ -738,19 +734,11 @@ svg{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     height: 70vh;
-    /* height: fit-content; */
-    /* border: 1px solid; */
+    border: 1px solid;
     font-size: 1.2rem;
-    margin-bottom: 5rem;
 }
 .mapsvlleSection h2 {
     border-bottom: #333 2px solid;
-}
-.buttonVilles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 .buttonVilles button {
     margin: 5px;
@@ -763,9 +751,9 @@ svg{
     font-size: 1rem;
     transition: .5s;
 }
-.active , .buttonVilles button:hover{
-    background-color: #e5690a !important;
-    transform: scale(1.1) !important;
+.buttonVilles button:hover {
+    background-color: #e5690a;
+    transform: scale(1.1);
 }
 .locationEtVilleInfo {
     display: flex;
@@ -780,7 +768,6 @@ svg{
     height: 100%;
     background-color: #ebe7ea;
 }
-
 .fa-city {
     /* border: 2px solid; */
     position: absolute;
@@ -795,19 +782,17 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 .villeNomMaps {
     border-bottom: 2px var(--secondary-color) solid;
 }
-/* .Localistionchoisi {
+.Localistionchoisi iframe {
+    border: 2px solid #3498db; /* Match button color for consistency */
     border-radius: 5px;
     height: 100%;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    width: 100%;
-    flex: 1;
-} */
+}
 
 .warningAndlocalinfo {
     display: flex;
@@ -817,8 +802,6 @@ svg{
     justify-content: start;
     height: 100%;
     width: 100%;
-    flex: 1;
-
 }
 
 .warningAndlocalinfo h3 {
@@ -1159,9 +1142,6 @@ footer img {
     .locationEtVilleInfo{
         flex-direction: column-reverse;
     }
-    .Localistionchoisi iframe{
-        width: 100%;
-    }
 }
 @media all and (min-width: 480px) and (max-width: 820px) { 
     nav{
@@ -1282,9 +1262,6 @@ footer img {
     .locationEtVilleInfo{
         flex-direction: column-reverse;
     }
-    .Localistionchoisi iframe{
-        width: 100%;
-    }
 }
 
 /* for mr ahmed sami*/
@@ -1365,9 +1342,6 @@ footer img {
     }
     .locationEtVilleInfo{
         flex-direction: column-reverse;
-    }
-    .Localistionchoisi iframe{
-        width: 100%;
     }
 }
 @media all and (min-width: 1024px) and (max-width: 1280px) { 

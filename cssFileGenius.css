@@ -689,7 +689,7 @@ svg{
     background: #2949b4;
     color: #ffffff;
     box-sizing: border-box;
-    background-image: url(assets/iStock-143918313-scaled.jpg);
+    background-image: url(./assets/iStock-143918313-scaled.jpg);
     -webkit-background-size :cover;
     -moz-background-size:cover;
     -o-background-size:cover;

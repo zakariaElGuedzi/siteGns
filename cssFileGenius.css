@@ -978,18 +978,6 @@ footer img {
     .smallContent2 h1{
         text-align: center;
     }
-    .MapsSection{
-        margin: 20px;
-        margin-top: 5rem;
-        /* color: #2949b4; */
-        background-color: #eaf2fe;
-    }
-    .MapsSection h2 {
-        font-size: 1.2rem;
-    }
-    .maps{
-        flex-wrap: wrap;
-    }
     #Menu{
         width: 19rem ;
     }
@@ -1233,10 +1221,6 @@ footer img {
         gap: 60px;
     
     }
-    .MapsSection{
-        margin: 20px;
-        margin-top: 5rem;
-    }
     .HomeFirstSection{
         gap: 14rem;
     }
@@ -1293,11 +1277,6 @@ footer img {
     .Contentfooter{
         display: flex;
         gap: 100px;
-    }
-    .MapsSection{
-        margin: 20px;
-        margin-top: 5rem;
-
     }
     .HomeFirstSection{
         gap: 16rem;

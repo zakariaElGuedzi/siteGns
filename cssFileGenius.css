@@ -1160,6 +1160,7 @@ footer img {
         height: 100%;
     }
 }
+
 @media all and (min-width: 480px) and (max-width: 820px) { 
     nav{
         display: none;

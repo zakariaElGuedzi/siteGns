@@ -31,7 +31,6 @@ let yearTimeFtr = document.getElementById('yearFoot')
 yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By GenuisCenter`
 
 
-
 function chngMaps(event) {
     let btnmaps = event.target.getAttribute('data-map-url');
     let villeNom = event.target.id;

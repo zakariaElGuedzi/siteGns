@@ -311,7 +311,7 @@ nav a:hover {
     background: linear-gradient(rgb(28, 23, 78),rgb(26, 26, 93));
     animation: cercleanim2 10s ease-in-out infinite alternate; 
     /* margin-left: -25rem; */
-    background-image: url(femmecasiste.webp);
+    background-image: url(/assets/femmecasiste.webp);
     background-position: 50%;
     background-size: 45rem;
     background-repeat: no-repeat;
@@ -449,23 +449,23 @@ svg{
 }
 .item1 {
     grid-column: 1 / span 2;
-    background-image: url(iStock-143918313-scaled.jpg);
+    background-image: url(/assets/iStock-143918313-scaled.jpg);
     border-top-left-radius: 15px;
 }
 .item2 {
-    background-image: url(menonstock.webp);
+    background-image: url(/assets/menonstock.webp);
 }
 .item3 {
     grid-column: 2 / span 2;
-    background-image: url(iStock-143918313-scaled.jpg);
+    background-image: url(/assets/iStock-143918313-scaled.jpg);
 }
 .item4 {
     grid-row: 2 / span 3;
-    background-image: url(femmecasiste.webp);
+    background-image: url(/assets/femmecasiste.webp);
 }
 .item5 {
     grid-column: 2 / span 2;
-    background-image: url(fdf87c17b739fd2a24366cca956269e2d6046a84-7360x4912.webp);
+    background-image: url(/assets/fdf87c17b739fd2a24366cca956269e2d6046a84-7360x4912.webp);
     border-bottom-right-radius: 15px;
 }
 .galerie img {
@@ -539,7 +539,7 @@ svg{
 }
 .reviewDiv {
     width: 30%;
-    background-image: url(Clientimage.jpg);
+    background-image: url(/assets/Clientimage.jpg);
     box-sizing: border-box;
     height: 27rem;
     background-position: center;
@@ -605,7 +605,7 @@ svg{
     border-top-right-radius: 35px;
 }
 .divProSuivi div:hover {
-    background-image: url(bgdivPro.jpg);
+    background-image: url(/assets/bgdivPro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
@@ -689,7 +689,7 @@ svg{
     background: #2949b4;
     color: #ffffff;
     box-sizing: border-box;
-    background-image: url(iStock-143918313-scaled.jpg);
+    background-image: url(/assets/iStock-143918313-scaled.jpg);
     -webkit-background-size :cover;
     -moz-background-size:cover;
     -o-background-size:cover;

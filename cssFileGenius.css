@@ -978,13 +978,16 @@ footer img {
 .GCP-Title h2{
     position: relative;
     width: fit-content;
+    border: 1px solid;
+
 }
 
 .GCP-Title img{
     position: absolute;
     width: 580px;
-    left: -80px;
-    top: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     filter: grayscale(100%) brightness(0%);
 }
 
@@ -1101,11 +1104,11 @@ footer img {
     .Socialss2{
         display: none;
     }
-    .GCP img{
-        width: 330px;
-        left: -35px;
+    /* .GCP-Title img{
+        width: 100%;
+        left: -65px;
         top: 20px;
-    }
+    } */
     .divProSuivi{
         height: fit-content;
         flex-direction: column;
@@ -1224,11 +1227,11 @@ footer img {
     .Socialss2{
         display: none;
     }
-    .GCP img{
+    /* .GCP img{
         width: 400px;
         top: 15px;
         left: -60px;
-    }
+    } */
     .divProSuivi{
         height: fit-content;
         flex-direction: column;
@@ -1331,11 +1334,11 @@ footer img {
     .Socialss2{
         display: none;
     }
-    .GCP img{
+    /* .GCP img{
         width: 477px;
         top: 30px;
         left: -37px;
-    }
+    } */
     .reviewDiv{
         display: flex;
         width: 100px;

@@ -180,8 +180,8 @@ nav a:hover {
     transform: scale(1.2);
 }
 .imgLogoPort {
-    width: 110px;
-    height: 100px;
+    width: 75px;
+    height: 78px;
 }
 .imgAndRmv {
     display: flex;
@@ -245,6 +245,10 @@ nav a:hover {
         color:var(--secondary-color) ;
 }
 /* HomeFirstSection */
+.GcpButton {
+    width: 300px;
+    background-color: #333;
+}
 .HomeFirstSection {
     color: #ffffff;
     display: flex;
@@ -457,7 +461,7 @@ svg{
 }
 .item3 {
     grid-column: 2 / span 2;
-    background-image: url(iStock-143918313-scaled.jpg);
+    background-image: url(kalmar-ecoreachstacker-scaled.jpg);
 }
 .item4 {
     grid-row: 2 / span 3;
@@ -872,46 +876,7 @@ footer img {
     width: 100%;
     height: 100vh;
 }
-.MapsSection{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    border: 3px solid rgba(0, 0, 0, 0);
-    border-radius: 15px;
-    margin: 7rem;
-    box-shadow: 2px 2px 15px rgb(172, 171, 171);
-    box-sizing: border-box;
-}
-.MapsSection h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.MapsSection p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.MapsSection i{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 10px;
-}
-.maps{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-}
-.maps div{
-    width: 100%;
-}
-.maps iframe{
-    width: 100%;
-}
 ::-webkit-scrollbar {
     width: 5px;
 }

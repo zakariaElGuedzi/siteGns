@@ -998,7 +998,7 @@ footer img {
     width: fit-content;
     text-align: center;
 }
-/*Phone*/
+/*Phone*/ 
 @media all and (max-width: 480px) { 
     .containerReview{
         margin: 0;

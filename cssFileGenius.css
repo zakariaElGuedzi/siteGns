@@ -414,7 +414,7 @@ svg{
     position: relative;
 }
 .titlegalry img {
-    width: 30%;
+    width: 100%;
     position: absolute;
     z-index: 22;
 }
@@ -975,14 +975,14 @@ footer img {
 .GCP-Title{
     position: relative;
 }
-.GCP h2{
+.GCP-Title h2{
     position: relative;
     width: fit-content;
 }
 
-.GCP img{
+.GCP-Title img{
     position: absolute;
-    width: 560px;
+    width: 580px;
     left: -80px;
     top: 25px;
     filter: grayscale(100%) brightness(0%);

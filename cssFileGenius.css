@@ -461,7 +461,7 @@ svg{
 }
 .item3 {
     grid-column: 2 / span 2;
-    background-image: url(kalmar-ecoreachstacker-scaled.jpg);
+    background-image: url(./assets/kalmar-ecoreachstacker-scaled.jpg);
 }
 .item4 {
     grid-row: 2 / span 3;

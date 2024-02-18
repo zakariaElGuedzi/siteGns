@@ -978,7 +978,7 @@ footer img {
 .GCP-Title h2{
     position: relative;
     width: fit-content;
-    border: 1px solid;
+    border: 1px solid red;
 
 }
 
@@ -1104,11 +1104,9 @@ footer img {
     .Socialss2{
         display: none;
     }
-    /* .GCP-Title img{
-        width: 100%;
-        left: -65px;
-        top: 20px;
-    } */
+    .GCP-Title img{
+        width: 380px;
+    }
     .divProSuivi{
         height: fit-content;
         flex-direction: column;
@@ -1228,11 +1226,9 @@ footer img {
     .Socialss2{
         display: none;
     }
-    /* .GCP img{
-        width: 400px;
-        top: 15px;
-        left: -60px;
-    } */
+    .GCP-Title img{
+        width: 480px;
+    }
     .divProSuivi{
         height: fit-content;
         flex-direction: column;
@@ -1335,11 +1331,9 @@ footer img {
     .Socialss2{
         display: none;
     }
-    /* .GCP img{
-        width: 477px;
-        top: 30px;
-        left: -37px;
-    } */
+    .GCP-Title img{
+        width: 550px;
+    }
     .reviewDiv{
         display: flex;
         width: 100px;

@@ -1,3 +1,6 @@
+window.addEventListener('load', function() {
+    location.reload(true);
+  });
 let PorfolioHeader = document.getElementById('Menu');
 let OpenRespoMenu = document.getElementById("OpenMark")
 let CloseresponMenu = document.getElementById("ClosePortfl2")

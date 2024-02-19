@@ -815,7 +815,7 @@ footer {
     justify-content: center;
     background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(25, 38, 100,50%));
     padding-bottom: 3rem;
-    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(0, 230, 11) 0%, #222121 100%) 0% 0% no-repeat padding-box;
     padding-top: 2rem;
 }
 footer h1 {

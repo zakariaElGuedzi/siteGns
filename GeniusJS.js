@@ -1,3 +1,8 @@
+var stylesheet = document.createElement('link');
+stylesheet.rel = 'stylesheet';
+stylesheet.type = 'text/css';
+stylesheet.href = 'cssFileGenius.css?v=' + new Date().getTime(); // Append current timestamp
+document.head.appendChild(stylesheet);
 
 let PorfolioHeader = document.getElementById('Menu');
 let OpenRespoMenu = document.getElementById("OpenMark")

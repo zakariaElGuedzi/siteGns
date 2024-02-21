@@ -31,14 +31,15 @@ header {
     position: fixed;
     display: flex;
     background-color: var(--primary-color);
-    background-color: #333dcf;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px 0 0;
     z-index: 98;
-    height: 3rem;
+    height: 3.2rem;
+    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #333dcf 100%) 0% 0% no-repeat padding-box;
+
 }
 header img {
     height: 65px;
@@ -263,6 +264,7 @@ nav a:hover {
     gap: 25rem;
     width: 100%;
     background-color: #e07223;
+    background: transparent radial-gradient(37vmax 15vmax at 10% 10%,  rgb(37, 61, 178) 0%, #333dcf 100%) 0% 0% no-repeat padding-box;
 }
 .writFirstDiv {
     margin-left: -12rem;
@@ -531,6 +533,7 @@ svg{
     background-color: #1b1d23;
     color: #fff;
     position: relative;
+    border-bottom: 4px solid var(--secondary-color);
 }
 .reviewDiv {
     width: 30%;
@@ -544,7 +547,6 @@ svg{
     border-top-right-radius: 100px;
     display: block;
     align-self: end;
-    border: 1px solid ;
     z-index: 23;
 }
 .ReviewInfo{
@@ -662,9 +664,6 @@ svg{
     display: flex;
     flex-direction: column;
 }
-.dateAndtitlearticl h3{
-    text-align: center;
-}
 .description{
     width: fit-content;
 }
@@ -723,6 +722,7 @@ svg{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
     height: fit-content;
     font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
 .mapsvlleSection h2 {
     border-bottom: #333 2px solid;
@@ -735,14 +735,18 @@ svg{
 }
 .buttonVilles button {
     margin: 5px;
-    padding: 15px 25px;
+    padding: 15px 40px;
     background-color: #3498db; /* Set your desired button background color */
     color: #fff; /* Set text color */
     border: none;
     border-radius: 5px;
+    width: 200px;
+    max-width: fit-content;
     cursor: pointer;
     font-size: 1rem;
     transition: .5s;
+    background: transparent radial-gradient(37vmax 15vmax at 2% 90%,  rgb(37, 61, 178) 0%, #3498db 100%) 0% 0% no-repeat padding-box;
+
 }
 .buttonVilles button:hover {
     background-color: #e5690a;
@@ -761,7 +765,8 @@ svg{
     height: 60%;
     padding: 1rem;
     height: 100%;
-    background-color: #ebe7ea;
+    color: #ebe7ea;
+    background: transparent radial-gradient(37vmax 15vmax at 10% 10%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
 }
 .fa-city {
     position: absolute;
@@ -802,7 +807,7 @@ svg{
 .warningAndlocalinfo h3 {
     font-size: 2.1rem;
     margin-bottom: -5px;
-    color: #333; /* Set your desired text color */
+    color: #ebe7ea;
 }
 /* footer */
 footer {
@@ -813,7 +818,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient( to bottom,rgb(255, 255, 255),rgb(25, 38, 100,50%));
     padding-bottom: 3rem;
     background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
     padding-top: 2rem;

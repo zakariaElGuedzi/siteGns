@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formation Digital</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+    }
+    /* Header */
+    header {
+        background: transparent radial-gradient(37vmax 15vmax at 20% 80%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+        height: 10vh;
+        width: 100%;
+        box-sizing: border-box;
+        color: #ffff;
+        display: flex;
+        align-items: center;
+    }
+    header img {
+        height: 8rem;
+        width: max-content;
+    }
+    header nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+    }
+   header  i:hover  {
+       color: rgb(27, 17, 17);
+   }
+   nav:hover h2 {
+       cursor: default;
+   }
+   nav:hover i {
+       color: #898181;
+   }
+   nav:hover .dropdown {
+       display: block;
+   }
+    .dropdown {
+        background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+        padding: 10px;
+        margin-top: 1rem;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        margin-top: 10rem;
+        width: 13rem;
+        line-height: 3rem;
+        /* text-align: center; */
+    }
+    .dropdown li {
+        list-style: none;
+        justify-content: s;
+    }
+    .dropdown li .aDp {
+        color: #fff;
+        text-decoration: none;
+        border-left: 3px solid;
+        padding-left: 10px;
+    }
+    .dropdown li .aDp:hover{
+        font-weight: bold;
+    }
+    /* body */
+    .pricipalSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+        gap: 3rem;
+
+    }
+    .pricipalSection h2 {
+        padding-bottom: 20px;
+    }
+    .div1F {
+        width: 30%;
+        /* height: 20rem; */
+        max-height: fit-content;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #b2abab;
+        text-align: start;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .div1F img {
+        width: 100%;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+    .div1F i {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    .div1F button {
+        height: 50px;
+        border: none;
+        cursor: pointer;
+        font-size: larger;
+        background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+        color: #eaf2fe;
+    }
+    /* footer */
+    footer {
+    width: 100%;
+    height: 100%;
+    background: #8d8989;
+    color: #eaf2fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+    padding-top: 2rem;
+    letter-spacing: 2px;
+}
+footer h1 {
+    font-size: 22px;
+    border-bottom: 5px solid rgb(25, 38, 100);
+    width: fit-content;
+    padding-bottom: 20px;
+}
+footer img {
+    height: 7rem;
+    width: 9rem;
+}
+.Contentfooter {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+}
+.smallContent {
+    height: 100%;
+    width: 14rem;
+}
+.smallContent2 {
+    font-size: x-large;
+}
+.smallContent2 h5 {
+    margin-bottom: .6rem;
+}
+.Media {
+    display: flex;
+    gap: 2rem;
+}
+.Media i {
+    font-size: 1.8rem;
+    transition: .5s;
+}
+.Media i:hover {
+    transform: scale(1.2);
+    color:  rgb(51, 68, 152);
+}
+
+/* section suivi user */
+.suiviUser {
+    padding: 10px 20px;
+    cursor: default;
+    opacity: 0.8;
+}
+.suiviUser a {
+    text-decoration: none;
+    color: #898181;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background: transparent radial-gradient(70vmax 15vmax at 100% 60%,  rgb(37, 61, 178) 20%, #222121 100%) 0% 0% no-repeat padding-box;
+    margin-bottom: 2rem;
+}
+.container p {
+    width: 20%;
+    background-color: #8f4e4e;
+    text-align: center;
+    color: #eaf2fe;
+}
+</style>
+<body>
+    <header>
+            <a href="index.html"><img src="./assets/logon.png" alt="Your Logo"></a> 
+            <nav>
+                <h2>Formation Digital <i class="fa-solid fa-caret-down ssdde"></i></h2>
+                    <ul class="dropdown">
+                        <li><a class="aDp" href="">Formation Accelerer</a></li>
+                        <li><a class="aDp" href="">Formation Logistique</a></li>
+                    </ul>
+            </nav>
+    </header>
+
+    <!-- section suivi user -->
+    <section>
+        <p class="suiviUser"> <a href="index.html">Acceuil</a> > Formation Digital</p>
+    </section>
+
+    <section class="pricipalSection">
+        <div class="div1F">
+            <h2>Formation Accelerer</h2>
+            <img src="./assets/Picture-1.png" alt="">
+           <i class="fa-regular fa-circle-check"> Support 24/7</i></p>
+            <p><i class="fa-regular fa-circle-check"> Gagnez de temps</i></p>
+            <button>Acceder</button>
+
+        </div>
+        <div class="div1F">
+            <h2>Formation Accelerer</h2>
+            <img src="./assets/Picture-1.png" alt="">
+            <i class="fa-regular fa-circle-check"> Support 24/7</i></p>
+            <p><i class="fa-regular fa-circle-check"> Gagnez de temps</i></p>        
+            <button>Acceder</button>
+        </div>
+    </section>
+
+    <section class="container">
+        <p>avantage1</p>
+        <p>avantage2</p>
+        <p>avantage3</p>
+    </section>
+
+    <!-- footer -->
+<footer>
+    <div class="Contentfooter hidden">
+        <div class="smallContent">
+            <img src="./assets/GCCHARIOT.png" alt="">
+            <p>"Les CACES sont les ailes qui élèvent la logistique, nous permettant de voler au-dessus des obstacles pour atteindre nos objectifs avec agilité."</p>
+            <p id="yearFoot"></p>
+        </div>
+
+        <div class="smallContent2">
+            <h1>Media</h1>
+            <h5>Suivez-nous</h5>
+            <div  class="Media">
+                <i class="fa-brands fa-square-instagram" style="cursor: pointer;" ></i>
+                <i class="fa-brands fa-facebook" style="cursor: pointer;"></i>
+                <i class="fa-brands fa-tiktok" style="cursor: pointer;"></i>
+                <i class="fa-brands fa-linkedin" style="cursor: pointer;"></i>
+            </div>
+            <p style="font-size: 1rem;">contact@geniuscenterprive.com</p>
+        </div>
+
+        <div class="smallContent">
+            <h1>Heures de travail</h1>
+            <p style="font-weight: bold;">lundi - Samedi</p>
+            <p>9:00am - 21:00pm</p>
+            <p style="font-weight: bold;">Dimanche</p>
+            <p>9:00am - 18:00pm</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

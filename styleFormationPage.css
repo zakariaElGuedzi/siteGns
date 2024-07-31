@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+}
+/* Header */
+header {
+    background: transparent radial-gradient(37vmax 15vmax at 20% 80%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+    height: 10vh;
+    width: 100vw;
+    box-sizing: border-box;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 8rem;
+    width: max-content;
+}
+header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+}
+header  i:hover  {
+   color: rgb(27, 17, 17);
+}
+nav:hover h2 {
+   cursor: default;
+}
+nav:hover i {
+   color: #898181;
+}
+nav:hover .dropdown {
+   display: block;
+}
+.dropdown {
+    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+    padding: 10px;
+    margin-top: 1rem;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    margin-top: 10rem;
+    width: 13rem;
+    line-height: 3rem;
+    /* text-align: center; */
+}
+.dropdown li {
+    list-style: none;
+    justify-content: s;
+}
+.dropdown li .aDp {
+    color: #fff;
+    text-decoration: none;
+    border-left: 3px solid;
+    padding-left: 10px;
+}
+.dropdown li .aDp:hover{
+    font-weight: bold;
+}
+/* body */
+.pricipalSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 3rem;
+
+}
+.pricipalSection h2 {
+    padding-bottom: 20px;
+}
+.div1F {
+    width: 30%;
+    /* height: 20rem; */
+    max-height: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #b2abab;
+    text-align: start;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div1F img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.div1F i {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.div1F button {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: larger;
+    background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+    color: #eaf2fe;
+}
+/* footer */
+footer {
+width: 100vw;
+height: 100%;
+background: #8d8989;
+color: #eaf2fe;
+display: flex;
+align-items: center;
+justify-content: center;
+padding-bottom: 3rem;
+background: transparent radial-gradient(37vmax 15vmax at 2% 100%,  rgb(37, 61, 178) 0%, #222121 100%) 0% 0% no-repeat padding-box;
+padding-top: 2rem;
+letter-spacing: 2px;
+}
+footer h1 {
+font-size: 22px;
+border-bottom: 5px solid rgb(25, 38, 100);
+width: fit-content;
+padding-bottom: 20px;
+}
+footer img {
+height: 7rem;
+width: 9rem;
+}
+.Contentfooter {
+display: flex;
+justify-content: center;
+gap: 15rem;
+}
+.smallContent {
+height: 100%;
+width: 14rem;
+}
+.smallContent2 {
+font-size: x-large;
+}
+.smallContent2 h5 {
+margin-bottom: .6rem;
+}
+.Media {
+display: flex;
+gap: 2rem;
+}
+.Media i {
+font-size: 1.8rem;
+transition: .5s;
+}
+.Media i:hover {
+transform: scale(1.2);
+color:  rgb(51, 68, 152);
+}
+
+/* section suivi user */
+.suiviUser {
+padding: 10px 20px;
+cursor: default;
+opacity: 0.8;
+}
+.suiviUser a {
+text-decoration: none;
+color: #898181;
+}
+.container {
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding: 20px;
+background: transparent radial-gradient(70vmax 15vmax at 100% 60%,  rgb(37, 61, 178) 20%, #222121 100%) 0% 0% no-repeat padding-box;
+margin-bottom: 2rem;
+}
+.container p {
+width: 20%;
+background-color: #8f4e4e;
+text-align: center;
+color: #eaf2fe;
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+ header img {
+    width: 8rem;
+ }
+.suiviUser {
+    margin-bottom: 3em;
+}
+.pricipalSection {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+.div1F {
+    width: 90%;
+    padding: 1em;
+}
+.container {
+    margin-top: 4em;
+}
+h2 {
+    font-size: 1.3rem;
+}
+}

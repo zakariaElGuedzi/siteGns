@@ -22,6 +22,7 @@ header img {
     height: 8rem;
     width: max-content;
 }
+
 header nav {
         display: flex;
         align-items: center;

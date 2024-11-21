@@ -22,20 +22,22 @@ function ClosePortfli() {
     document.body.style.overflowY = "scroll"
 
 }
+
 OpenRespoMenu.addEventListener("click",()=>{
     ResMenu.style.display = "flex"
     document.body.style.overflowY = "hidden"
 })
+
 CloseresponMenu.addEventListener("click",()=>{
     ResMenu.style.display = "none"
     document.body.style.overflowY = "scroll"
 })
+
 // footer year
 let date = new Date();
 let year = date.getFullYear();
 let yearTimeFtr = document.getElementById('yearFoot')
 yearTimeFtr.innerHTML = `Privacy Policy | ©  ${year} Genius Center Design By GenuisCenter`
-
 
 function chngMaps(event) {
     let btnmaps = event.target.getAttribute('data-map-url');
@@ -54,3 +56,6 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace("active", "");
     this.className += " active" 
 })}
+
+
+let buttonLoginInHome = document.getElementById('')

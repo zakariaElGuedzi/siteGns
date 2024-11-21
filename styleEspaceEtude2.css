@@ -1,0 +1,160 @@
+* {
+    /* border: 1px solid ; */
+    box-sizing: border-box;
+}
+
+
+.outfit-uniquifier {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit' , sans-serif;
+    font-weight:lighter;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(235, 233, 233);
+}
+header img {
+    width: 100px;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red;    */
+}
+header ul li {
+    /* padding: 0px 20px; */
+    margin: 0px 20px;
+    list-style: none;
+    border-bottom: 2px solid orange;
+    font-weight: bold;
+    font-size: larger;
+}
+body {
+    margin: 0 10%;
+    height: 100vh;
+    }
+
+
+* {
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}    
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 5px;
+    width: 40%;
+    /* background-color: aqua; */
+    gap: 5px;
+
+}
+.card {
+    /* padding: 10px; */
+    background-color:rgb(85, 83, 83);
+    color: white;
+    /* margin: 5px; */
+    text-align: center;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+
+    background-image: url(assets/femmecasiste.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+section {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: blueviolet; */
+    padding: 5px;
+    justify-content: space-between;
+}
+section .div1 {
+    width: 60%;
+    /* background-color: red; */
+}
+.div1 i {
+    font-size: 15px;
+    padding: 10px;
+    background-color: black;
+    color: chocolate;
+    border-radius: 100%;
+    display: inline;
+    margin-right: 10px;
+}
+.div1 p {
+    display: inline;
+    font-weight: bold;
+}
+.div1 div {
+    margin: 10px;
+    padding: 15px;
+}
+
+@media  (max-width:1300px) {
+    section {
+        flex-direction:column;
+    }
+    section div {
+        width: 100%;
+    }
+    .grid-container {
+        width: 100%;
+    }
+    section .div1 {
+    width: 100%;
+    /* background-color: red; */
+}
+    body {
+        height: 100vh;
+        margin: 0 ;
+    }
+@media  (max-width:1300px) {
+    section {
+        width: 95%;
+    }
+   }
+}
+
+.background-overlay {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    background: 
+      linear-gradient(rgba(139, 137, 137, 0.5), rgba(128, 128, 128, 0.5)), 
+      url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    padding-top: 20px;
+    transition: all 0.3;
+
+  }
+  .card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px gray;
+}
+  .card:hover .background-overlay {
+    background: none;
+  }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrap</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* border: 1px solid; */
+            box-sizing: border-box;
+        }    
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            padding: 5px;
+            width: 40%;
+            /* background-color: aqua; */
+        }
+        .card {
+            padding: 10px;
+            background-color:rgb(85, 83, 83);
+            color: white;
+            /* margin: 5px; */
+            text-align: center;
+            height: 180px;
+            width: 100%;
+        }
+        section {
+            display: flex;
+            margin: 20px auto;
+            flex-direction: row;
+            width: 80%;
+            /* background-color: blueviolet; */
+            padding: 5px;
+            justify-content: space-between;
+        }
+        section .div1 {
+            width: 60%;
+            /* background-color: red; */
+        }
+        @media  (max-width:1300px) {
+            section {
+                flex-direction:column;
+            }
+            section div {
+                width: 100%;
+            }
+            .grid-container {
+                width: 100%;
+            }
+            section .div1 {
+            width: 100%;
+            /* background-color: red; */
+        }
+        @media  (max-width:1300px) {
+            section {
+                width: 95%;
+            }
+           }
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <div class="div1">
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <p class="nomComplet">Ahmad</p>
+            </div>
+            <div>   
+                <i class="fa-solid fa-phone"></i>
+                <p class="phoneNumber">79 97 93 92 99</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="ville">Rabat</p>
+            </div>
+        </div>
+        </div>
+    
+    <div class="grid-container">
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum.</p>
+            </div>
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+            </div>
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+            </div>
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+            </div>
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+            </div>
+             <div class="card">
+                <h2>Lorem, ipsum.</h2>
+            </div>
+    </div>
+
+</section>
+    
+</body>
+</html>

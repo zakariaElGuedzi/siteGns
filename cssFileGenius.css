@@ -19,6 +19,14 @@ h3 ,h2, h1 {
 button {
     cursor: pointer;
 }
+header .espaceEtud {
+    border: none;
+    border:0px;
+}
+header .espaceEtud a {  
+    color: #101213;
+    text-decoration: none;
+}
 body {
     margin: 0;
     padding: 0;

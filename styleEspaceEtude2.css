@@ -7,7 +7,7 @@
 .outfit-uniquifier {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: weight !important;
     font-style: normal;
   }
   
@@ -15,8 +15,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit' , sans-serif;
-    font-weight:lighter;
+    font-family: 'Outfit' , sans-serif !important;
+    font-weight:lighter ;
 }
 header {
     height: 70px;
@@ -25,6 +25,10 @@ header {
     justify-content: space-around;
     flex-direction: row;
     background-color: rgb(235, 233, 233);
+}
+header i {
+    font-size: larger !important;
+    display: none !important;
 }
 header img {
     width: 100px;
@@ -43,7 +47,7 @@ header ul li {
     font-size: larger;
 }
 body {
-    margin: 0 10%;
+    margin: 0 10% !important;
     height: 100vh;
     }
 
@@ -55,7 +59,7 @@ body {
     box-sizing: border-box;
 }    
 .grid-container {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 1fr ;
     padding: 5px;
     width: 40%;
@@ -66,10 +70,10 @@ body {
 .card {
     /* padding: 10px; */
     background-color:rgb(85, 83, 83);
-    color: white;
+    color: rgb(255, 255, 255) !important;
     /* margin: 5px; */
     text-align: center;
-    height: 180px;
+    height: 180px !important;
     width: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -99,7 +103,7 @@ section .div1 {
     font-size: 15px;
     padding: 10px;
     background-color: black;
-    color: chocolate;
+    color: rgb(36, 30, 210);
     border-radius: 100%;
     display: inline;
     margin-right: 10px;
@@ -113,6 +117,33 @@ section .div1 {
     padding: 15px;
 }
 
+/* menuphone */
+.menuPhone {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    height: 170px;
+    font-weight: bold;
+    font-size: larger;
+    display: none ;
+    transform: all 0.3s;
+    background-color: rgb(235, 233, 233);
+
+}
+.menuPhone ul {
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 95%;
+    list-style: none;
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
 @media  (max-width:1300px) {
     section {
         flex-direction:column;
@@ -128,14 +159,22 @@ section .div1 {
     /* background-color: red; */
 }
     body {
-        height: 100vh;
-        margin: 0 ;
+        margin: 0 !important;
     }
 @media  (max-width:1300px) {
     section {
         width: 95%;
     }
    }
+}
+@media (max-width: 700px) {
+    header ul {
+        display: none;
+    }
+    header i {
+        display: flex !important;
+        font-size: 30px !important;
+    }
 }
 
 .background-overlay {
@@ -154,6 +193,7 @@ section .div1 {
   .card:hover {
     transform: scale(1.2);
     box-shadow: 0 0 10px gray;
+    z-index: 999;
 }
   .card:hover .background-overlay {
     background: none;

@@ -104,9 +104,7 @@ body {
 .grid-container {
     display: grid !important;
     grid-template-columns: 1fr 1fr ;
-    padding: 5px;
     width: 40%;
-    /* background-color: aqua; */
     gap: 5px;
 
 }
@@ -127,6 +125,7 @@ body {
     background-size: cover;
     cursor: pointer;
     transition: all 0.3s;
+    border: 0 !important;
 }
 
 section {
@@ -214,6 +213,9 @@ section .div1 {
    }
 }
 @media (max-width: 700px) {
+    header {
+        padding: 12px;
+    }
     header ul {
         display: none;
     }
@@ -246,7 +248,9 @@ section .div1 {
         width: 200px !important;
     } */
     footer {
-        padding:  30px  15px !important;
+        padding:  60px  15px !important;
+        padding-bottom: 60px !important;
+        flex-direction: column;
     }
 }
 
@@ -267,6 +271,7 @@ section .div1 {
     transform: scale(1.2);
     box-shadow: 0 0 10px gray;
     z-index: 999;
+    justify-content: s;
 }
   .card:hover .background-overlay {
     background: none;
@@ -277,4 +282,6 @@ footer {
     height: 200px;
     color: aliceblue;
     background-color: black;
+    height: fit-content;
+    min-height: fit-content;
 }

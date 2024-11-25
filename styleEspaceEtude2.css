@@ -127,6 +127,9 @@ body {
     transition: all 0.3s;
     border: 0 !important;
 }
+.cd2 {
+    background-image: url(assets/cacesenginchantier.jpg) !important;
+}
 
 section {
     display: flex;

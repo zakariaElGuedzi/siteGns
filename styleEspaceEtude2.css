@@ -246,7 +246,7 @@ section .div1 {
         width: 200px !important;
     } */
     footer {
-        padding: 15px !important;
+        padding:  30px  15px !important;
     }
 }
 

@@ -35,6 +35,10 @@
         /* height: 20%; */
         /* min-height: fit-content; */
         /* margin:0px 30px; */
+        aspect-ratio: 1/1;
+      }
+      form h2 {
+        font-size: 20px;
       }
     }
     button {
@@ -72,7 +76,7 @@
             <div class="container  d-flex align-items-center justify-content-center col-lg-8 formLg">
 
                 <form id="loginForm" class="row m-2 py-5 p-md-5 " >
-                    <h2 class="text-center pb-5">Indiquez votre compte</h2>
+                    <h2 class="text-center pb-3">Indiquez votre compte</h2>
                     <label for="username" class="fw-bold">N* Telephone :</label>
                     <input type="number" id="username" name="username" placeholder="entrer votre numero de telephone" class="p-3 my-3 mt-0" required>
                     
@@ -82,7 +86,7 @@
                         <input type="checkbox" name="" id="showPassWord" class="p-2 col-1">
                     </div>
                     
-                    <button type="button" onclick="validateForm()" class="mt-5 py-3 border-primary fw-bold text-primary fs-5">Login</button>
+                    <button type="button" onclick="validateForm()" class="mt-4 py-2 border-primary fw-bold text-primary fs-5">Login</button>
                     <p id="error-message"></p>
                 </form>
             </div>

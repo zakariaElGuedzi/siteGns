@@ -40,6 +40,7 @@ header div {
 header i {
     font-size: larger !important;
     display: none !important;
+    border-radius: 0px !important;
 }
 header img {
     width: 100px;

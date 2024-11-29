@@ -14,6 +14,7 @@
             /* border: 1px solid gray; */
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
         .sercle {
             width: 30px;
@@ -30,26 +31,19 @@
             }
        
         }
-        /* body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            margin: auto;
-        } */
-        
+ 
     </style>
 </head>
 <body>
 
 <div class="bg-white  row ">
-    <div class=" col-md-6 p-md-3  container d-flex align-items-center justify-content-around">
+    <div class=" col-md-6 p-md-3 py-1 container d-flex align-items-center justify-content-around">
         <div class="text-center">
-            <p class="sercle bg-primary fw-bold d-flex align-items-center justify-content-center fs-3"><i class="fa-solid fa-spinner text-center m-0 p-0"></i></p>
+            <p class="sercle bg-primary fw-bold text-white d-flex align-items-center justify-content-center fs-3"><i class="fa-solid fa-spinner text-center m-0 p-0"></i></p>
             <p class="m-0" >en cours</p>
         </div>
         <div class="text-center">
-            <p class="sercle bg-primary fw-bold d-flex align-items-center justify-content-center fs-3"><i class="fa-solid fa-spinner text-center m-0 p-0"></i></p>
+            <p class="sercle bg-success text-white fw-bold d-flex align-items-center justify-content-center fs-3"><i class="fa-solid fa-check text-center m-0 p-0"></i></p>
             <p class="m-0" >vérification</p>
         </div>
     </div>

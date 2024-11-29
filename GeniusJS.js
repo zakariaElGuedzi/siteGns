@@ -20,7 +20,7 @@ function afficherPorf() {
 function ClosePortfli() {
     PorfolioHeader.style.display = "none";
     document.body.style.overflowY = "scroll"
-
+ 
 }
 
 OpenRespoMenu.addEventListener("click",()=>{

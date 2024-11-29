@@ -260,6 +260,7 @@ nav a:hover {
 /* HomeFirstSection */
 .GcpButton {
     width: 300px;
+    width: fit-content;
 }
 .HomeFirstSection {
     color: #ffffff;
@@ -944,7 +945,7 @@ footer img {
 
 .GCP-Title img{
     position: absolute;
-    width: 580px;
+    width: 405px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

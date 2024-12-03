@@ -22,6 +22,14 @@
             border-radius: 50%;
             margin: auto;
         }
+        .sercle i {
+            /* margin: auto; */
+            /* margin-left: 2.2px; */
+            position: relative;
+            font-size: 15px;
+            padding: 1px;
+            border-radius: 50%;
+        }
         .crclstp2 {
             width: 15px;
             height: 15px;
@@ -46,9 +54,8 @@
             100% {   rotate: 360deg;   }
             /* 80% {   rotate: 72deg;   } */
         }
-        .serclAnim{
+        .serclAnim {
             animation: progess 5s normal infinite ease;
-            border-radius: 50%;
         }
         .inscrBtn {
             background: rgb(0,0,0);
@@ -73,15 +80,19 @@
 
         <div class="text-center  z-3">
             <!-- <div class="p-1 crclstp2 rounded-circle d-flex align-items-center justify-content-center bg-danger"> -->
-                <p class="sercle  bg-primary fw-bold rounded-circle text-white  d-flex align-items-center justify-content-center  "><i class="fa-solid fa-spinner  serclAnim text-center m-0 p-0"></i></p>
+                <p class="sercle  bg-dark fw-bold rounded-circle text-white  d-flex align-items-center justify-content-center p-0 text-align-center ">
+                    <i class="fa-solid fa-spinner bg-primary d-flex serclAnim text-center  text-align-center "></i>
+                    </p>
             <!-- </div> -->
             <p class="m-0" >en cours</p>
         </div>
 
         <div class="text-center">
-            <div class="p-1 crclstp2 rounded-circle d-flex align-items-center justify-content-center bg-dark">
-                <p class="sercle bg-success h-100 text-white fw-bold d-flex align-items-center justify-content-center fs-5"><i class="fa-solid fa-check   text-center m-0 p-0"></i></p>
-            </div>
+            <!-- <div class="p-1 crclstp2 rounded-circle d-flex align-items-center justify-content-center bg-dark"> -->
+                <p class="sercle bg-dark  text-white rounded-circle fw-bold d-flex align-items-center justify-content-center p-0 text-align-center">
+                    <i class="fa-solid fa-check bg-success d-flex text-center "></i>
+                </p>
+            <!-- </div> -->
             <p class="m-0" >vérification</p>
         </div>
     </div>

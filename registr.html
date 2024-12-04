@@ -69,6 +69,9 @@
             outline: 0;
             border: 0;
         }
+        input {
+            outline: 0;
+        }
         
 </style>
 </head>
@@ -104,48 +107,35 @@
                 <h2 class="text-center my-3 mb-5">Remplissez le formulaire suivant</h2>
             <form action="" class=" row col-md-7">
                 <label for="" class="text-align-start pb-2 p-0  text-white fw-bold">Nom complet</label>
-                <input type="text" name="" id="input1" class="border-0 p-2 mb-4 mb-md-4" placeholder="Entrez votre nom complet">
+                <input oninput="functionChekInpuVal()" type="text" name="" id="input1" class="border-0 p-2 mb-4 mb-md-4" placeholder="Entrez votre nom complet">
 
                 <label for="" class="pb-2 p-0 text-capitalize  text-white fw-bold">numéro de telephone</label>
-                <input type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="Entrez votre Numéro de téléphone">
+                <input  oninput="functionChekInpuVal()" type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="Entrez votre Numéro de téléphone">
 
                 <label for="" class="pb-2 p-0   text-white fw-bold">Ville de résidence</label>
-                <input type="number" name="" id="" class="border-0 p-2 mb-4" placeholder="Entrez votre ville de résidence">
+                <input  oninput="functionChekInpuVal()" type="text" name="" id="" class="border-0 p-2 mb-4" placeholder="Entrez votre ville de résidence">
 
                     <label for="" class="pb-2 p-0 text-white fw-bold">Formation souhaitée <span class="text-dark">choisis votre formation souhaitée</span> </label>
                     <!-- <input type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="choisis votre formation souhaitée"> -->
                     <div class=" m-0 p-2  bg-white d-flex align-items-center row container">
                         <select name="" id=""  class="OptionInputForm border-0 p-0 m-0 bg-dark  bg-transparent border-0 ">
-                            <option value="" class="11">Opt1</option>
-                            <option value="" class="21">Opt 2</option>
+                            <option value="op1" class="11">Opt1</option>
+                            <option value="op2" class="21">Opt 2</option>
                             <option value="" class="31">Opt 3</option>
                             <option value="" class="41">Opt 5</option>
                             <option value="" class="51">Opt1</option>
                         </select>
                     </div>
 
-                <button class="inscrBtn border-0 py-3 mt-4 text-white my-3 fw-bold fs-5" type="submit" onclick="subm()">Inscrire maintenant</button>
+                <button class="inscrBtn border-0 py-3 mt-4 text-white my-3 fw-bold fs-5" type="submit" onclick="chekinaWehdakhwya()" onclick="subm()">Inscrire maintenant</button>
             </form>
         </div>
     </div>
 </div>
 
-<script>
-    // let inputtag = document.getElementsByTagName('input');
-        
-    function subm() {
-        
-        let inputtag = document.getElementById('input1');
 
-        if (inputtag.value === "") {
-            inputtag.style.outline = "1px solid red"
-        } else {
-            inputtag.style.outline = "0"
-        }
-        event.preventDefault()
-    }
 
-</script>
 
+<script src="registreJsFile.js"></script>
 </body>
 </html>

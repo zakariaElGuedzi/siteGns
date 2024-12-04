@@ -1,76 +1,51 @@
     
+
+    let SelectOp = document.getElementById("selectTypeForm");
+    let Valueselect = SelectOp.value ;
+    // console.log(Valueselect+"d")
+    
+    SelectOp.addEventListener("change",function() {
+        // let Valueselect = SelectOp.value ;
+         Valueselect = SelectOp.value ;
+
+    
+        console.log(Valueselect)
+    })
+
     // cal all inputs
     let testTakeInput = document.getElementsByTagName('input');
-
-
-    // let s = 0 ;
-    // let  elementsCalled = document.getElementsByTagName("input");
-
-    // for (s = 0; s<elementsCalled.length ; s++) {
-
-    //     console.log(elementsCalled[s])
-    //     console.log("df"+[s])
-    // }
-
-
-function functionChekInpuVal() {
     
-    
-
-        for (i=0 ; i<testTakeInput.length ; i++ ) {
-            if (testTakeInput[i].value === "") {
-                testTakeInput[i].style.outline = "2px solid red"; 
-                console.log("input khashaa t3mer")
-
-            } else {
-                console.log("sf raha 3amrat")
-                testTakeInput[i].style.outline = "2px black solid";
-            }
-        }
-        event.preventDefault()
-    }
 
 // function tchof ina input khawi
 function chekinaWehdakhwya() {
 
         for (i=0 ; i<testTakeInput.length ; i++ ) {
-            if (testTakeInput[i].value === "") {
-                testTakeInput[i].style.outline = "2px solid red"; 
-                console.log("rahom khawin")
-            } else {
-                console.log("rahom 3amrin kolhom")
-            }
+            if (    testTakeInput[i].value === "" && Valueselect === "") {
+               testTakeInput[i].style.outline = "2px solid red"; 
+                console.log("rahom khawin");
+                functionChekInpuVal();
+            } 
+            
+            else  {
+                console.log("rahom 3amrin kolhom - send form");
+            }           
         }
         event.preventDefault()
-
     }
 
+    function functionChekInpuVal() {
+        for (i=0 ; i<testTakeInput.length ; i++ ) {
+            if (testTakeInput[i].value === "") {
+                testTakeInput[i].style.outline = "2px solid red"; 
+                console.log("input khashaa t3mer")
+                
 
-    function subm() {
-     
-        chekinaWehdakhwya();
-        functionChekInpuVal();
-        // if (inpttst.value === "") {
-        //     functionChekInpuVal();
-        // } else {
-        //     inpttst.style.outline = "0"
-        // }
-        // functionChekInpuVal()
+            } else {
+                console.log("sf raha 3amrat")
+                testTakeInput[i].style.outline = "1px black solid";
+            }
+        }
         
-        event.preventDefault()
     }
-    
 
 
-
-
-
-
-const label = document.querySelector('label[for="selectTypeForm"]');
-const select = document.getElementById('selectTypeForm');
-
-label.addEventListener('click', () => {
-    // select.focus(); // Focus on the select element
-    select.style.backgroundColor = "#b2abab";
-    console.log("red")
-});

@@ -47,12 +47,7 @@ function chekinaWehdakhwya() {
 
 
     function subm() {
-        
-        // if (inputtag.value === "") {
-        //     inputtag.style.outline = "1px solid red"
-        // } else {
-        //     inputtag.style.outline = "0"
-        // }
+     
         chekinaWehdakhwya();
         functionChekInpuVal();
         // if (inpttst.value === "") {
@@ -69,6 +64,13 @@ function chekinaWehdakhwya() {
 
 
 
-let dgf = document.getElementsByName
 
 
+const label = document.querySelector('label[for="selectTypeForm"]');
+const select = document.getElementById('selectTypeForm');
+
+label.addEventListener('click', () => {
+    // select.focus(); // Focus on the select element
+    select.style.backgroundColor = "#b2abab";
+    console.log("red")
+});

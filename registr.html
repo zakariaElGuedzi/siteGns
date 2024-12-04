@@ -77,7 +77,6 @@
 </style>
 </head>
 <body>
-
 <!-- <div class="bg-white  row  "> -->
     <div class=" col-md-6 p-md-3 py-1 container d-flex align-items-center justify-content-around ">
         <div class="PersonHr bg-dark vw-100 position-absolute mb-4 z-n1"></div>
@@ -108,25 +107,29 @@
                 <h2 class="text-center my-3 mb-5">Remplissez le formulaire suivant</h2>
             <form action="" class=" row col-md-7">
                 <label for="" class="text-align-start pb-2 p-0  text-white fw-bold">Nom complet</label>
-                <input oninput="functionChekInpuVal()" type="text" name="" id="input1" class="border-0 p-2 mb-4 mb-md-4 " placeholder="Entrez votre nom complet">
+                <input oninput="functionChekInpuVal()" type="text" name="" id="input1" class="border-0 p-2 mb-4 mb-md-4 " placeholder="Entrez votre nom complet" required>
 
                 <label for="" class="pb-2 p-0 text-capitalize  text-white fw-bold">numéro de telephone</label>
-                <input  oninput="functionChekInpuVal()" type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="Entrez votre Numéro de téléphone">
+                <input  oninput="functionChekInpuVal()" type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="Entrez votre Numéro de téléphone" required>
 
                 <label for="" class="pb-2 p-0   text-white fw-bold">Ville de résidence</label>
-                <input  oninput="functionChekInpuVal()" type="text" name="" id="" class="border-0 p-2 mb-4" placeholder="Entrez votre ville de résidence">
+                <input  oninput="functionChekInpuVal()" type="text" name="" id="" class="border-0 p-2 mb-4" placeholder="Entrez votre ville de résidence" required>
 
-                    <label for="" class="pb-2 p-0 text-white fw-bold">Formation souhaitée <span class="text-dark">choisis votre formation souhaitée</span> </label>
+                    <label for="selectTypeForm" class="pb-2 p-0 text-white fw-bold">Formation souhaitée <span class="text-dark">choisis votre formation souhaitée</span>
                     <!-- <input type="number" name="" id="" class="border-0 p-2 mb-3" placeholder="choisis votre formation souhaitée"> -->
                     <div class=" m-0 p-2  bg-white d-flex align-items-center row container">
-                        <select name="" id=""  class="OptionInputForm border-0 p-0 m-0 bg-dark  bg-transparent border-0 ">
+                        <select name="" id="selectTypeForm"  class="OptionInputForm col-10  p-0 m-0 border-0 ">
                             <option value="op1" class="11">Opt1</option>
                             <option value="op2" class="21">Opt 2</option>
                             <option value="" class="31">Opt 3</option>
                             <option value="" class="41">Opt 5</option>
                             <option value="" class="51">Opt1</option>
                         </select>
+                        <!-- <label for="selectTypeForm" class=" col-2">
+                            <i class="fa-solid fa-caret-down text-end bg-primary w-100"></i>
+                        </label> -->
                     </div>
+                    </label>
 
                 <button class="inscrBtn border-0 py-3 mt-4 text-white my-3 fw-bold fs-5" type="submit" onclick="chekinaWehdakhwya()" onclick="subm()">Inscrire maintenant</button>
             </form>

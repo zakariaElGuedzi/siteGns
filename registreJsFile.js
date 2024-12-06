@@ -23,11 +23,14 @@ function chekinaWehdakhwya() {
             if (    testTakeInput[i].value === "" && Valueselect === "") {
                testTakeInput[i].style.outline = "2px solid red"; 
                 console.log("rahom khawin");
-                functionChekInpuVal();
+                // functionChekInpuVal();
+                SelectOp.style.outline = "2px solid red";
+                console.log(testTakeInput[i])
             } 
             
             else  {
                 console.log("rahom 3amrin kolhom - send form");
+                SelectOp.style.outline = "2px solid black"
             }           
         }
         event.preventDefault()

@@ -7,7 +7,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    /* border: 1px solid; */
+    /* border: 1px solid red; */
 }
 p {
     cursor: default;
@@ -41,7 +41,7 @@ header {
     background-color: var(--primary-color);
     justify-content: space-between;
     align-items: center;
-    width: 99%;
+    width: 100%;
     box-sizing: border-box;
     padding: 0 20px 0 0;
     z-index: 98;
@@ -325,6 +325,75 @@ nav a:hover {
     background-size: 45rem;
     background-repeat: no-repeat;
 }
+
+/* //section call to action 1  */
+.secCallToact1 {
+    padding: 0 15%;
+}
+.div1CallToAction {
+    height: 350px;
+    overflow: hidden;
+    width: 75%;
+    /* background-color: orange !important; */
+}
+.btncallto {
+    border: 1px solid #292bb4;
+    border-radius: 30px;
+    background-color: #292bb4;
+    z-index: 100;
+}
+.btncallto:hover {
+    background-color: #292bb4 !important;
+    transition: 1s ease-in-out all;
+    color: white;
+    border-color: white !important;
+}
+.borderreduisCont {
+    margin-left:570px;
+    margin-top:  -70px;
+    margin-top:  -160px;
+}
+.borderA1 {
+    border-radius: 50%;
+    box-shadow: 0 0 25px 15px rgba(8, 8, 81, 0.453);
+}
+.A0 {
+    background-color: #292bb4;
+    width: 500px;
+    height: 500px;
+}
+.A1 {
+    background-color: rgba(41, 87, 180, 0.8);
+    width: 400px;
+    height: 400px;
+}
+.A2 {
+    background-color: rgba(57, 98, 179, 0.6);
+    width: 300px;
+    height: 300px;
+}
+.A3 {
+    background-color: rgba(72, 107, 179, 0.6);
+    width: 210px;
+    height: 210px;
+}
+@media (max-width:768px) {
+    .div1CallToAction {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #171818;
+    }
+    .btnCallTOac {
+        background-color: #171818;
+    }
+    .btncallto {
+        background-color: white;
+        color: #292bb4 !important;
+    }
+    
+}
+
 /* section metier article */
 .metierArticle {
     background-color: var(--primary-color);
@@ -986,7 +1055,7 @@ footer img {
         width: fit-content;
         gap: 30px;
         flex-wrap: wrap;
-        padding: 30px 50px;
+        /* padding: 30px 50px; */
     }
     .smallContent,.smallContent2{
         width: 100%;

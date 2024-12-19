@@ -2,7 +2,7 @@
 $user = 'root';
 $password = '';
 $host = 'localhost';
-$dbname = 'baseetudiantgenius';
+$dbname = 'bdgeniuscp';
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
@@ -28,6 +28,8 @@ if (isset($_GET['submit'])) {
 
         if ($query->execute()) {
             echo "<script>alert('Data inserted successfully');</script>";
+            // header("Location : thankyoupage.php");
+            exit();
         } else {
             $errorInfo = $query->errorInfo();
             echo "<script>alert('Error inserting data: " . htmlspecialchars(json_encode($errorInfo)) . "');</script>";
@@ -56,6 +58,8 @@ if (isset($_GET['submit'])) {
 // if (!is_numeric($ntelephone)) {
 //     die("Phone number must be numeric!");
 // }
+
+
 ?>
 
 

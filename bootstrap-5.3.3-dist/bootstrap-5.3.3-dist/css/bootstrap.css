@@ -7692,6 +7692,7 @@ textarea.form-control-lg {
   width: 100vw !important;
 }
 
+
 .min-vw-100 {
   min-width: 100vw !important;
 }
@@ -9786,6 +9787,7 @@ textarea.form-control-lg {
     -o-object-fit: scale-down !important;
     object-fit: scale-down !important;
   }
+
   .object-fit-md-none {
     -o-object-fit: none !important;
     object-fit: none !important;
